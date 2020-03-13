@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../static/sheets/calendar.css">
+    <link rel="stylesheet" href="../../static/sheets/swiper.css">
+    <script src="../../static/scripts/require.js" data-main="index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="J_page">
+        <div class="J_row clearfix" id="gps-0">
+            <div class="j-ad">
+                <div class="img">
+                    <a href="#"><img src="../../static/images/ad.jpg" alt=""></a>
+                </div>
+                <div class="btns">
+                    <a class="btn close_btn" href="#">×</a>
+                </div>
+            </div>
+        </div>
+        <div class="J_row clearfix">
+            <div class="J_col col-side-full clearfix">
+                <div class="shortcut">
+                    <div class="layout">
+                        <div class="s-sub">
+                            <ul>
+                                <li><a href="/">首页</a></li>
+                                <li><a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a></li>
+                                <li><a href="http://www.honor.cn/" target="_blank">荣耀官网</a></li>
+                                <li><a href="http://club.huawei.com" target="_blank">花粉俱乐部</a></li>
+                                <li><a href="/priority" rel="nofollow">V码(优购码)</a></li>
+                                <li><a href="#/company" target="_blank">企业购</a></li>
+                                <li class="s-hwep hide" id="li-enterprise-preferential"></li>
+                                <li><a id="showSelectRegion" href="javascript:;">Select Region</a></li>
+                            </ul>
+                        </div>
+                        <div class="s-main">
+                            <ul>
+                                <li id="unlogin_status">
+                                    <div id="top_unlogin" class="header-toolbar">
+                                        <div class="header-toolbar-item">
+                                            <div class="">
+                                                <a id="top-index-loginUrl" href="../logReg/login.html" rel="nofollow">请登录</a>
+                                                <a href="../logReg/register.html" rel="nofollow">&nbsp;&nbsp;注册</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" timetype="timestamp">我的订单</a>
+                                </li>
+                                <li>
+                                    <div class="s-dropdown s-dropdown-link">
+                                        <div class="h">
+                                            <a class="icon-dropdown">客户服务</a>
+                                        </div>
+                                        <div class="b">
+                                            <div class="dropdown-more">
+                                                <dl>
+                                                    <dt><a href="#" target="_blank">帮助中心</a></dt>
+                                                    <dt><a href="#" target="_blank">联系客服</a></dt>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="s-dropdown">
+                                        <div class="h">
+                                            <a href="#" target="_blank" class="icon-dropdown">网站导航</a>
+                                        </div>
+                                        <div class="b">
+                                            <div class="dropdown-navs clearfix">
+                                                <p><a href="#"></a></p>
+                                                <div class="dropdown-navs-icon">
+                                                    <a href="#">商城首页</a>
+                                                </div>
+                                                <p><br></p>
+                                                <dl>
+                                                    <dt>频道</dt>
+                                                    <dd>
+                                                        <div class="item">
+                                                            <a href="#/huawei" target="_blank">华为专区</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/honor" target="_blank">荣耀专区</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#" target="_blank">企业购</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>产品</dt>
+                                                    <dd>
+                                                        <div class="item">
+                                                            <a href="#/list-36" target="_blank">手机</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/list-43" target="_blank">智能家居</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/list-40" target="_blank">平板&amp;笔记本</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/list-54" target="_blank">通用配件</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/list-59" target="_blank">智能穿戴</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/list-47" target="_blank">专属配件</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>增值服务</dt>
+                                                    <dd>
+                                                        <div class="item">
+                                                            <a href="#/recycle" target="_blank">以旧换新</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#" target="_blank">礼品包装</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/order/tcsProductIndex" target="_blank">补购保障</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/order/batteryRenew" target="_blank">99元换电池</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>会员</dt>
+                                                    <dd>
+                                                        <div class="item">
+                                                            <a href="#/privilege" target="_blank">会员频道</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="downloadApp">
+                                    <div class="s-dropdown">
+                                        <div class="h">
+                                            <a class="icon-dropdown">手机版</a>
+                                        </div>
+                                        <div class="b">
+                                            <div class="dropdown-code">
+                                                <div class="clearfix dropdown-code-detail">
+                                                    <a href="#" target="_blank">
+                                                        <img src="../../static/images/mallcode.jpg" class="code-img">
+                                                    </a>
+                                                    <div class="code-info">
+                                                        <h2>华为商城APP</h2>
+                                                        <p class="red">新人专享好礼<br>最高5000积分</p>
+                                                        <span class="icon-andrid"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix dropdown-code-detail">
+                                                    <a>
+                                                        <img src="../../static/images/vmallcode.jpg" class="code-img">
+                                                    </a>
+                                                    <div class="code-info">
+                                                        <h2>华为商城公众号</h2>
+                                                        <p>微信扫一扫</p>
+                                                        <span class="icon-wechat"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix dropdown-code-detail">
+                                                    <a>
+                                                        <img src="../../static/images/procode.jpg" class="code-img">
+                                                    </a>
+                                                    <div class="code-info">
+                                                        <h2>微信小程序</h2>
+                                                        <p>微信扫一扫</p>
+                                                        <span class="icon-wechat"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="s-dropdown s-dropdown-minicart">
+                                        <div class="h h-wide" id="header-toolbar-minicart">
+                                            <a href="/cart?t=15156408584301568605742077" class="icon-minicart"
+                                                rel="nofollow" timetype="timestamp" target="blank">
+                                                <span>购物车(<span id="header-cart-total">0</span>)</span>
+                                            </a>
+                                        </div>
+                                        <div class="b" id="header-toolbar-minicart-content">
+                                            <!-- 2017-06-19-迷你购物车-start -->
+                                            <div class="dropdown-minicart">
+                                                <div class="minicart-pro-empty minicart-pro-empty-index"
+                                                    id="minicart-pro-empty">
+                                                    <p><span class="icon-minicart"></span></p>
+                                                    <p>您的购物车是空的，赶紧选购吧~</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="J_row clearfix">
+            <div class="J-col col-side-full clearfix">
+                <div class="J_mod mod-nav-home nav-home-656160">
+                    <div class="layout">
+                        <div class="left">
+                            <div class="logo_area">
+                                <a href="" title="Vmall.com - 华为商城"><img src="../../static/images/VMALL1.png"
+                                        alt=""></a>
+                                <em></em>
+                                <a href=""><img src="../../static/images/huawei1.png" alt=""></a>
+                            </div>
+                            <div class="naver">
+                                <ul id="naver-list clearfix">
+                                    <li>
+                                        <a href="#" target="_blank" class="">
+                                            <span>手机</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" class="">
+                                            <span>笔记本电脑</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span>平板&amp;穿戴</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" class="">
+                                            <span>智能家居</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span>配件</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span>HUAWEI P30系列</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="naver-sub">
+                                <div class="naver-sub-wrap">
+                                    <div class="p-title clearfix">
+                                        <div class="s1 fl">
+                                            <a href="" target="_blank"><span>全部</span>手机</a>
+                                        </div>
+                                        <div class="s2 fl clearfix">
+                                            <a href="" target="_blank" class="fl">HUAWEI Mate系列</a>
+                                            <a href="" target="_blank" class="fl">HUAWEI P系列</a>
+                                            <a href="" target="_blank" class="fl">HUAWEI nova系列</a>
+                                            <a href="" target="_blank" class="fl">华为畅享系列</a>
+                                            <a href="" target="_blank" class="fl">HUAWEI 麦芒系列</a>
+                                        </div>
+                                    </div>
+                                    <ul id="zxnav_0_prolist" class="grid-list clearfix">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="search_bar" id="searchBar-area">
+                                <div class="search-bar-form">
+                                    <input type="text" class="text" maxlength="100" id="nav-search-kw"
+                                        autocomplete="off">
+                                    <input type="submit" class="button" value="搜索">
+                                </div>
+                                <div class="search-bar-keys">
+                                    <div class="searchBar_key">
+                                        <a href="#">HUAWEI P30</a>
+                                        <a href="#">HUAWEI Mate20</a>
+                                    </div>
+                                </div>
+                                <div class="search-bar-history"></div>
+                                <div class="search-bar-history"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="J_mod mod-pic">
+                    <div class="pic-wrap">
+                        <img src="../../static/images/nav_header.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="J-row clearfix">
+            <div class="J-mod banner">
+                <div class="swiper_container">
+                    <div class="swiper_wrapper">
+                        <div class="slider">
+                            <ul>
+                                <li><img src="../../static/images/ban1.jpg" alt=""></li>
+                                <li><img src="../../static/images/ban2.jpg" alt=""></li>
+                                <li><img src="../../static/images/ban3.jpg" alt=""></li>
+                                <li><img src="../../static/images/ban4.jpg" alt=""></li>
+                                <li><img src="../../static/images/ban5.jpg" alt=""></li>
+                                <li><img src="../../static/images/ban6.jpg" alt=""></li>
+                                <li><img src="../../static/images/ban7.jpg" alt=""></li>
+                            </ul>
+                            <div class="slider-nav">
+                                <span class="current"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <a href="" class="button-slider-prev"></a>
+                                <a href="" class="button-slider-next"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fix-nav-wrap">
+                <div class="mod27-nav">
+                    <ul class="fixed-nav">
+                        <li>
+                            <a class="current">新品上市</a>
+                        </li>
+                        <li>
+                            <a>精品推荐</a>
+                        </li>
+                        <li>
+                            <a>手机专区</a>
+                        </li>
+                        <li>
+                            <a>更多福利</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="J_mod mod-coupons couponpic-656168">
+                <div class="mod22-carnival-coupons-wrp">
+                    <div class="mod22-carnival-coupons">
+                        <img src="https://res1.vmallres.com/shopdc/pic/6444e69b-e4aa-4dc4-ac6d-6cdb02eebf06.jpg" alt=""
+                            style="width:100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="J-mod">
+                <div class="newPro">
+                    <div class="pic-wrap">
+                        <img src="../../static/images/newsPro.jpg" alt="">
+                    </div>
+                    <div class="newpro-wrap">
+                        <img src="../../static/images/newPros.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="J-mod">
+                <div class="pergood">
+                    <div class="goodTitle">
+                        <img src="../../static/images/perfectGoods.jpg" alt="">
+                    </div>
+                    <div class="goodList">
+                        <img src="../../static/images/perfGood1.jpg" alt="">
+                    </div>
+                    <div class="goodList">
+                        <img src="../../static/images/perGood2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="J-mod">
+                <div class="phoneArea">
+                    <div class="phoneTitle">
+                        <img src="../../static/images/phone.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="J-row row-1200 clearfix">
+            <div class="J-col col-side-1200 clearfix">
+                <div class="J_mod mod-product-single-huawei tpl-3 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-4 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="J_row row-1200 clearfix">
+            <div class="J_col col-side-1200 clearfix">
+                <div class="J_mod mod-productDrag mod-656194">
+                    <div class="layout swiper-container swiper-container-horizontal">
+                        <ul class="drag-list swiper-wrapper clearfix"
+                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <li class="drag-items swiper-slide swiper-slide-active">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 5i</div>
+                                    <p class="drag-desc">&nbsp; 赠小天鹅音箱丨享6期免息</p>
+                                    <p class="drag-price">
+                                        <span>¥1999</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 5i</div>
+                                    <p class="drag-desc">&nbsp; 赠小天鹅音箱丨享6期免息</p>
+                                    <p class="drag-price">
+                                        <span>¥1999</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 5i</div>
+                                    <p class="drag-desc">&nbsp; 赠小天鹅音箱丨享6期免息</p>
+                                    <p class="drag-price">
+                                        <span>¥1999</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 5i</div>
+                                    <p class="drag-desc">&nbsp; 赠小天鹅音箱丨享6期免息</p>
+                                    <p class="drag-price">
+                                        <span>¥1999</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 5i</div>
+                                    <p class="drag-desc">&nbsp; 赠小天鹅音箱丨享6期免息</p>
+                                    <p class="drag-price">
+                                        <span>¥1999</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 5i</div>
+                                    <p class="drag-desc">&nbsp; 赠小天鹅音箱丨享6期免息</p>
+                                    <p class="drag-price">
+                                        <span>¥1999</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 5i</div>
+                                    <p class="drag-desc">&nbsp; 赠小天鹅音箱丨享6期免息</p>
+                                    <p class="drag-price">
+                                        <span>¥1999</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 5i</div>
+                                    <p class="drag-desc">&nbsp; 赠小天鹅音箱丨享6期免息</p>
+                                    <p class="drag-price">
+                                        <span>¥1999</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="drag-btn swiper-button-prev btn-prev swiper-button-disabled"><span></span></div>
+                        <div class="drag-btn swiper-button-next btn-next"><span></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="J-mod">
+                <div class="phoneArea">
+                    <div class="phoneTitle">
+                        <img src="../../static/images/AIWear.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="J-row row-1200 clearfix">
+            <div class="J-col col-side-1200 clearfix">
+                <div class="J_mod mod-product-single-huawei tpl-3 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-4 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="J_row row-1200 clearfix">
+            <div class="J_col col-side-1200 clearfix">
+                <div class="J_mod mod-productDrag mod-656194" data-hoverconfig="{&quot;isSuspend&quot;:true}">
+                    <div class="layout swiper-container swiper-container-horizontal">
+                        <ul class="drag-list swiper-wrapper clearfix"
+                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <li class="drag-items current swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086191812395.html#10086086517231"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res6.vmallres.com/pimages//product/6901443315901/428_428_1560916037515mp.png">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 5i</div>
+                                    <p class="drag-desc">&nbsp; 赠小天鹅音箱丨享6期免息</p>
+                                    <p class="drag-price">
+                                        <span>¥1999</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-next" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086894759259.html#10086728762576"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res1.vmallres.com/pimages//product/6901443272785/428_428_1543457093718mp.png">
+                                    </p>
+                                    <div class="drag-title">华为畅享9</div>
+                                    <p class="drag-desc">&nbsp; 6.26英寸珍珠屏</p>
+                                    <p class="drag-price">
+                                        <span>¥1099</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086254040251.html#10086427803767"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res7.vmallres.com/pimages//product/6901443278176/428_428_1544693959065mp.png">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 4</div>
+                                    <p class="drag-desc">&nbsp; 6.4英寸极点全面屏</p>
+                                    <p class="drag-price">
+                                        <span>¥2799</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086622264908.html#10086953660908"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res1.vmallres.com/pimages//product/6901443292110/428_428_1552440645488mp.png">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 4e</div>
+                                    <p class="drag-desc">&nbsp; 3200万立体美颜丨AI超广角三摄</p>
+                                    <p class="drag-price">
+                                        <span>¥1599</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide"
+                                style="border-right: 1px solid rgb(234, 234, 234); width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086211949427.html#10086715375786"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res9.vmallres.com/pimages//product/6901443262199/428_428_1542770204265mp.png">
+                                    </p>
+                                    <div class="drag-title">HUAWEI Mate 20 X</div>
+                                    <p class="drag-desc">&nbsp; 享12期免息丨赠触控笔和快充车充</p>
+                                    <p class="drag-price">
+                                        <span>¥4099</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086500150623.html#10086277133784"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res8.vmallres.com/pimages//product/6901443323340/428_428_7C1CB8972D5541B58EAD394BB2686BE3897353C35C1603FFmp.png">
+                                    </p>
+                                    <div class="drag-title">华为麦芒8</div>
+                                    <p class="drag-desc">&nbsp; 新色上市</p>
+                                    <p class="drag-price">
+                                        <span>¥1699</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086209439106.html#10086469441567"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res1.vmallres.com/pimages//product/6901443265084/428_428_1542852832819mp.png">
+                                    </p>
+                                    <div class="drag-title">华为畅享 MAX</div>
+                                    <p class="drag-desc">&nbsp; 7.12英寸珍珠屏</p>
+                                    <p class="drag-price">
+                                        <span>¥1699</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086158977116.html#10086279272671"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res1.vmallres.com/pimages//product/6901443229918/428_428_1540629967045mp.png">
+                                    </p>
+                                    <div class="drag-title">华为畅享 8e 青春</div>
+                                    <p class="drag-desc">&nbsp; 5.45英寸高清全面屏</p>
+                                    <p class="drag-price">
+                                        <span>¥549</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="drag-btn swiper-button-prev btn-prev swiper-button-disabled"><span></span></div>
+                        <div class="drag-btn swiper-button-next btn-next"><span></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="J-mod">
+                <div class="phoneArea">
+                    <div class="phoneTitle">
+                        <img src="../../static/images/AIJJ.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="J-row row-1200 clearfix">
+            <div class="J-col col-side-1200 clearfix">
+                <div class="J_mod mod-product-single-huawei tpl-3 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-4 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="J_row row-1200 clearfix">
+            <div class="J_col col-side-1200 clearfix">
+                <div class="J_mod mod-productDrag mod-656194" data-hoverconfig="{&quot;isSuspend&quot;:true}">
+                    <div class="layout swiper-container swiper-container-horizontal">
+                        <ul class="drag-list swiper-wrapper clearfix"
+                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <li class="drag-items current swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086191812395.html#10086086517231"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res6.vmallres.com/pimages//product/6901443315901/428_428_1560916037515mp.png">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 5i</div>
+                                    <p class="drag-desc">&nbsp; 赠小天鹅音箱丨享6期免息</p>
+                                    <p class="drag-price">
+                                        <span>¥1999</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-next" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086894759259.html#10086728762576"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res1.vmallres.com/pimages//product/6901443272785/428_428_1543457093718mp.png">
+                                    </p>
+                                    <div class="drag-title">华为畅享9</div>
+                                    <p class="drag-desc">&nbsp; 6.26英寸珍珠屏</p>
+                                    <p class="drag-price">
+                                        <span>¥1099</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086254040251.html#10086427803767"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res7.vmallres.com/pimages//product/6901443278176/428_428_1544693959065mp.png">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 4</div>
+                                    <p class="drag-desc">&nbsp; 6.4英寸极点全面屏</p>
+                                    <p class="drag-price">
+                                        <span>¥2799</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086622264908.html#10086953660908"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res1.vmallres.com/pimages//product/6901443292110/428_428_1552440645488mp.png">
+                                    </p>
+                                    <div class="drag-title">HUAWEI nova 4e</div>
+                                    <p class="drag-desc">&nbsp; 3200万立体美颜丨AI超广角三摄</p>
+                                    <p class="drag-price">
+                                        <span>¥1599</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide"
+                                style="border-right: 1px solid rgb(234, 234, 234); width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086211949427.html#10086715375786"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res9.vmallres.com/pimages//product/6901443262199/428_428_1542770204265mp.png">
+                                    </p>
+                                    <div class="drag-title">HUAWEI Mate 20 X</div>
+                                    <p class="drag-desc">&nbsp; 享12期免息丨赠触控笔和快充车充</p>
+                                    <p class="drag-price">
+                                        <span>¥4099</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086500150623.html#10086277133784"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res8.vmallres.com/pimages//product/6901443323340/428_428_7C1CB8972D5541B58EAD394BB2686BE3897353C35C1603FFmp.png">
+                                    </p>
+                                    <div class="drag-title">华为麦芒8</div>
+                                    <p class="drag-desc">&nbsp; 新色上市</p>
+                                    <p class="drag-price">
+                                        <span>¥1699</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086209439106.html#10086469441567"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res1.vmallres.com/pimages//product/6901443265084/428_428_1542852832819mp.png">
+                                    </p>
+                                    <div class="drag-title">华为畅享 MAX</div>
+                                    <p class="drag-desc">&nbsp; 7.12英寸珍珠屏</p>
+                                    <p class="drag-price">
+                                        <span>¥1699</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide" style="width: 240px;">
+                                <a class="thumb" href="https://www.vmall.com/product/10086158977116.html#10086279272671"
+                                    target="_blank">
+                                    <p class="drag-img">
+                                        <img
+                                            src="https://res1.vmallres.com/pimages//product/6901443229918/428_428_1540629967045mp.png">
+                                    </p>
+                                    <div class="drag-title">华为畅享 8e 青春</div>
+                                    <p class="drag-desc">&nbsp; 5.45英寸高清全面屏</p>
+                                    <p class="drag-price">
+                                        <span>¥549</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="drag-btn swiper-button-prev btn-prev swiper-button-disabled"><span></span></div>
+                        <div class="drag-btn swiper-button-next btn-next"><span></span></div>
+                    </div>
+                    <script>
+                        var couponList = window.couponList || {};
+                    </script>
+                </div>
+            </div>
+            <div class="J-mod">
+                <div class="phoneArea">
+                    <div class="phoneTitle">
+                        <img src="../../static/images/hotsale.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="J-row row-1200 clearfix">
+            <div class="J-col col-side-1200 clearfix">
+                <div class="J_mod mod-product-single-huawei tpl-3 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-4 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="J_mod mod-product-single-huawei tpl-5 single-huawei-656182">
+                    <a class="item" href="#">
+                        <div class="p-text">
+                            <div class="title">00000</div>
+                            <div class="desc">0000</div>
+                            <div class="price">0000<span>起</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="J_row row-1200 clearfix">
+            <div class="J_col col-side-1200 clearfix">
+                <div class="J_mod mod-productDrag mod-656194" data-hoverconfig="{&quot;isSuspend&quot;:true}">
+                    <div class="layout swiper-container swiper-container-horizontal">
+                        <ul class="drag-list swiper-wrapper clearfix"
+                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <li class="drag-items current swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title"></div>
+                                    <p class="drag-desc">&nbsp; </p>
+                                    <p class="drag-price">
+                                        <span></span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-next" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title"></div>
+                                    <p class="drag-desc">&nbsp; </p>
+                                    <p class="drag-price">
+                                        <span></span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items current swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title"></div>
+                                    <p class="drag-desc">&nbsp; </p>
+                                    <p class="drag-price">
+                                        <span></span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-next" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title"></div>
+                                    <p class="drag-desc">&nbsp; </p>
+                                    <p class="drag-price">
+                                        <span></span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items current swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title"></div>
+                                    <p class="drag-desc">&nbsp; </p>
+                                    <p class="drag-price">
+                                        <span></span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-next" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title"></div>
+                                    <p class="drag-desc">&nbsp; </p>
+                                    <p class="drag-price">
+                                        <span></span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items current swiper-slide swiper-slide-active" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title"></div>
+                                    <p class="drag-desc">&nbsp; </p>
+                                    <p class="drag-price">
+                                        <span></span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="drag-items swiper-slide swiper-slide-next" style="width: 240px;">
+                                <a class="thumb" href="" target="_blank">
+                                    <p class="drag-img">
+                                        <img src="">
+                                    </p>
+                                    <div class="drag-title"></div>
+                                    <p class="drag-desc">&nbsp; </p>
+                                    <p class="drag-price">
+                                        <span></span>
+                                    </p>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="drag-btn swiper-button-prev btn-prev swiper-button-disabled"><span></span></div>
+                        <div class="drag-btn swiper-button-next btn-next"><span></span></div>
+                    </div>
+                    <script>
+                        var couponList = window.couponList || {};
+                    </script>
+                </div>
+            </div>
+            <div class="J-mod">
+                <div class="phoneArea">
+                    <div class="phoneTitle">
+                        <img src="../../static/images/pin.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="J-mod">
+                <div class="phoneArea">
+                    <div class="phoneTitle">
+                        <img src="../../static/images/pinList.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="J-mod">
+                <div class="phoneArea">
+                    <div class="phoneTitle">
+                        <img src="../../static/images/fuli.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="J-row clearfix">
+            <div class="J-mod mod-sign sign-656256 mod-sign-zh">
+                <div class="mod-sign-pc mod-sign-wrap">
+                    <div class="sign-wrapper">
+                        <div class="sign-content">
+                            <div class="sign-content-text" style="color:#D8A72E">你已累计签到0天</div>
+                            <div class="sign-btn-wrapper">
+                                <a class="sign-btn" href="javascript:;">签到</a>
+                            </div>
+                            <div id="ca" class="calendar j-calendar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="J-row clearfix">
+            <div class="J_mod mod-footer">
+                <!--底部信息-->
+                <!--设置快速定位id-->
+                <div class="mod-footer-wrp">
+                    <!-- 口号 -->
+                    <div class="slogan-container">
+                        <div class="slogan">
+                            <ul>
+                                <li class="s1">
+                                    <a target="_blank"
+                                        href="#"><i></i>百强企业&nbsp;品质保证</a>
+                                </li>
+                                <li class="s2">
+                                    <a target="_blank"
+                                        href="#"><i></i>7天退货&nbsp;15天换货</a>
+                                </li>
+                                <li class="s3">
+                                    <a target="_blank" href="#"><i></i>
+                                        <span>48元起免运费</span> </a>
+                                </li>
+                                <li class="s4">
+                                    <a target="_blank"
+                                        href="#"><i></i>1000家维修网点&nbsp;全国联保</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /口号 -->
+                    <!-- 服务 -->
+                    <div class="service-container">
+                        <div class="service">
+                            <div class="service-l fl">
+                                <dl class="s1">
+                                    <dt>
+                                        <p class="title">
+                                            购物相关
+                                        </p>
+                                    </dt>
+                                    <dd>
+                                        <ol>
+                                            <li><a href="#"
+                                                    target="_blank">购物指南</a></li>
+                                            <li><a href="#"
+                                                    target="_blank">配送方式</a></li>
+                                            <li><a href="#"
+                                                    target="_blank">支付方式</a></li>
+                                            <li><a href="#"
+                                                    target="_blank">常见问题</a></li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                                <dl class="s2">
+                                    <dt>
+                                        <p class="title">
+                                            保修与退换货
+                                        </p>
+                                    </dt>
+                                    <dd>
+                                        <ol>
+                                            <li><a href="https://www.vmall.com/help/faq-833.html"
+                                                    target="_blank">保修政策</a></li>
+                                            <li><a href="https://www.vmall.com/help/faq-834.html"
+                                                    target="_blank">退换货政策</a></li>
+                                            <li><a href="https://www.vmall.com/help/faq-5259.html"
+                                                    target="_blank">退换货流程</a></li>
+                                            <li><a href="http://consumer.huawei.com/cn/support/warranty-query/index.htm"
+                                                    target="_blank">保修状态查询</a></li>
+                                            <li><a href="http://c-ver.huawei.com/web/" target="_blank">配件防伪查询</a></li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                                <dl class="s3">
+                                    <dt>
+                                        <p class="title">
+                                            维修与技术支持
+                                        </p>
+                                    </dt>
+                                    <dd>
+                                        <ol>
+                                            <li><a href="http://consumer.huawei.com/cn/support/service-center/index.htm"
+                                                    target="_blank">售后网点</a></li>
+                                            <li><a href="http://consumer.huawei.com/cn/support/reservation/index.htm"
+                                                    target="_blank">预约维修</a></li>
+                                            <li><a href="http://consumer.huawei.com/cn/support/express-repair/index.htm"
+                                                    target="_blank">手机寄修</a></li>
+                                            <li><a href="http://consumer.huawei.com/cn/support/sparepart-price/index.htm"
+                                                    target="_blank">备件价格查询</a></li>
+                                            <li><a href="http://consumer.huawei.com/cn/support/door-to-door-service/"
+                                                    target="_blank">上门服务</a></li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                                <dl class="s4">
+                                    <dt>
+                                        <p class="title">
+                                            特色服务
+                                        </p>
+                                    </dt>
+                                    <dd>
+                                        <ol>
+                                            <li><a href="https://consumer.huawei.com/cn/support/distinguish/"
+                                                    target="_blank">防伪查询</a></li>
+                                            <li><a href="https://www.vmall.com/order/tcsProductIndex"
+                                                    target="_blank">补购保障</a></li>
+                                            <li><a href="https://www.vmall.com/recycle" target="_blank">以旧换新</a></li>
+                                            <li><a href="https://www.vmall.com/product/10086344499475.html#10086230774569"
+                                                    target="_blank">礼品包装</a></li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                                <dl class="s5">
+                                    <dt>
+                                        <p class="title">
+                                            关于我们
+                                        </p>
+                                    </dt>
+                                    <dd>
+                                        <ol>
+                                            <li><a href="https://www.huawei.com/cn/about-huawei/corporate-information"
+                                                    target="_blank">公司介绍</a></li>
+                                            <li><a href="https://www.vmall.com/help/faq-939.html"
+                                                    target="_blank">华为商城简介</a></li>
+                                            <li><a href="https://www.vmall.com/offshop/hwshoplist"
+                                                    target="_blank">华为线下门店</a></li>
+                                            <li><a href="https://www.vmall.com/offshop/shoplist"
+                                                    target="_blank">荣耀线下门店</a></li>
+                                            <li><a href="https://www.vmall.com/job" target="_blank">诚征英才</a></li>
+                                            <li>
+                                                <a href="javascript:;" title="意见反馈"
+                                                    onclick="ec.survery.open();">意见反馈</a>
+                                            </li>
+                                        </ol>
+                                    </dd>
+                                </dl>
+                                <dl class="s6" id="serverlink">
+                                    <dt class="relative">
+                                        <p class="title">
+                                            友情链接
+                                        </p>
+                                        <p class="button">
+                                            <span class="btn btn-prev disabled"> &lt; </span><span class="btn btn-next">
+                                                &gt; </span>
+                                        </p>
+                                    </dt>
+                                    <dd class="">
+                                        <div class="service-list clearfix" style="width: 1431px;">
+                                            <ol>
+                                                <li><a href="http://www.huawei.com/cn/"
+                                                        target="_blank"><span>华为集团</span></a></li>
+                                                <li><a href="https://consumer.huawei.com/cn/"
+                                                        target="_blank"><span>华为CBG官网</span></a></li>
+                                                <li><a href="http://www.honor.cn/" target="_blank"><span>荣耀官网</span></a>
+                                                </li>
+                                                <li><a href="http://club.huawei.com/"
+                                                        target="_blank"><span>花粉俱乐部</span></a></li>
+                                                <li><a href="https://www.vmall.com/shopdc/sitemap.html/"
+                                                        target="_blank"><span>网站地图</span></a></li>
+                                            </ol>
+                                            <ol>
+                                                <li><a href="http://www.hwtrip.com/"
+                                                        target="_blank"><span>爱旅官网</span></a></li>
+                                                <li><a href="http://app.hicloud.com/"
+                                                        target="_blank"><span>华为应用市场</span></a></li>
+                                                <li><a href="http://www.wbiao.cn/" target="_blank"><span>万表网</span></a>
+                                                </li>
+                                                <li><a href="http://www.askci.com/"
+                                                        target="_blank"><span>中商情报网</span></a></li>
+                                                <li><a href="http://www.shuame.com/"
+                                                        target="_blank"><span>刷机精灵</span></a></li>
+                                            </ol>
+                                            <ol>
+                                                <li><a href="https://www.vmall.com/"
+                                                        target="_blank"><span>华为手机</span></a></li>
+                                                <li><a href="http://www.17ugo.com/"
+                                                        target="_blank"><span>优购物官网</span></a></li>
+                                                <li><a href="http://www.znds.com/" target="_blank"><span>智能电视</span></a>
+                                                </li>
+                                                <li><a href="http://www.uc.cn/" target="_blank"><span>UC浏览器</span></a>
+                                                </li>
+                                                <li><a href="http://www.zol.com/" target="_blank"><span>中关村商城</span></a>
+                                                </li>
+                                            </ol>
+                                            <ol>
+                                                <li><a href="http://www.kugou.com/"
+                                                        target="_blank"><span>酷狗音乐</span></a></li>
+                                                <li><a href="http://www.958shop.com/"
+                                                        target="_blank"><span>百信手机网</span></a></li>
+                                                <li><a href="http://www.cardbaobao.com/"
+                                                        target="_blank"><span>卡宝宝网</span></a></li>
+                                                <li><a href="http://www.duote.com/"
+                                                        target="_blank"><span>多特软件下载</span></a></li>
+                                                <li><a href="http://www.tongbu.com/"
+                                                        target="_blank"><span>同步助手</span></a></li>
+                                            </ol>
+                                            <ol>
+                                                <li><a href="http://www.fengniao.com/"
+                                                        target="_blank"><span>蜂鸟摄影网</span></a></li>
+                                                <li><a href="http://www.7po.com/" target="_blank"><span>奇珀论坛</span></a>
+                                                </li>
+                                                <li><a href="http://www.homekoo.com/"
+                                                        target="_blank"><span>家具商城</span></a></li>
+                                                <li><a href="http://www.paixie.net/"
+                                                        target="_blank"><span>拍鞋网商城</span></a></li>
+                                                <li><a href="http://www.obolee.com/"
+                                                        target="_blank"><span>欧宝丽珠宝</span></a></li>
+                                            </ol>
+                                            <ol>
+                                                <li><a href="http://www.xungou.com/"
+                                                        target="_blank"><span>寻购网</span></a></li>
+                                                <li><a href="http://www.yzmg.com/" target="_blank"><span>亿智蘑菇</span></a>
+                                                </li>
+                                                <li><a href="http://www.wandoujia.com/"
+                                                        target="_blank"><span>安卓市场</span></a></li>
+                                                <li><a href="http://baike.1688.com/"
+                                                        target="_blank"><span>阿里巴巴生意经</span></a></li>
+                                                <li><a href="http://product.cnmo.com/"
+                                                        target="_blank"><span>手机大全</span></a></li>
+                                            </ol>
+                                            <ol>
+                                                <li><a href="http://www.anzow.com/"
+                                                        target="_blank"><span>安卓软件园</span></a></li>
+                                                <li><a href="http://www.wpxap.com/"
+                                                        target="_blank"><span>智机论坛</span></a></li>
+                                                <li><a href="http://www.eepw.com.cn/"
+                                                        target="_blank"><span>电子产品世界</span></a></li>
+                                                <li><a href="http://www.liqucn.com/"
+                                                        target="_blank"><span>历趣网</span></a></li>
+                                                <li><a href="http://www.51bi.com/" target="_blank"><span>网购返利</span></a>
+                                                </li>
+                                            </ol>
+                                            <ol>
+                                                <li><a href="http://www.apple110.com/"
+                                                        target="_blank"><span>Apple110</span></a></li>
+                                                <li><a href="http://www.91.com/"
+                                                        target="_blank"><span>91手机门户网</span></a></li>
+                                                <li><a href="http://www.ydss.cn/" target="_blank"><span>移动叔叔</span></a>
+                                                </li>
+                                                <li><a href="http://www.outlets365.com/"
+                                                        target="_blank"><span>奥特莱斯</span></a></li>
+                                                <li><a href="https://www.vmall.com/"
+                                                        target="_blank"><span>荣耀Magic</span></a></li>
+                                            </ol>
+                                            <ol>
+                                                <li><a href="http://car.ctrip.com/"
+                                                        target="_blank"><span>携程租车</span></a></li>
+                                            </ol>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="service-r fl">
+                                <dl class="s7">
+                                    <dt>
+                                        <p class="title">
+                                            400-088-6888
+                                        </p>
+                                    </dt>
+                                    <dd>
+                                        <ol>
+                                            <li>
+                                                <a>7x24小时客服热线（仅收市话费）</a>
+                                            </li>
+                                        </ol>
+                                    </dd>
+                                    <dd>
+                                        <a rel="nofollow" class="service-btn btn-line-primary"
+                                            href="https://celia.consumer.huawei.com/vmall/#/?businessUUID=902d812b8bdb44e089e34544fb5d77e2&amp;enterurl=https%3A%2F%2Fwww.vmall.com%2F&amp;k=1&amp;from=06&amp;remark="
+                                            target="_blank" style="display:block;"><i class=""></i> 在线客服</a>
+                                    </dd>
+                                </dl>
+                                <div class="service-code clearfix">
+                                    <h2>
+                                        关注Vmall：
+                                    </h2>
+                                    <ul class="clearfix">
+                                        <li class="service-code-wechat">
+                                            <div class="service-code-img">
+                                                <img
+                                                    src="https://res.vmallres.com/pimages/sale/2018-11/20181116180507506.jpg">
+                                            </div>
+                                        </li>
+                                        <li class="service-code-toutiao">
+                                            <a target="_blank"
+                                                href="https://www.toutiao.com/c/user/52373534151/#mid=52586950033"
+                                                rel="nofollow" style="display:block;width:20px;height:20px;"></a>
+                                        </li>
+                                        <li class="service-code-sina">
+                                            <a target="_blank" href="https://weibo.com/shophuawei" rel="nofollow"
+                                                style="display:block;width:20px;height:20px;"></a>
+                                        </li>
+                                        <li class="service-code-vmall">
+                                            <a target="_blank" href="https://club.huawei.com/" rel="nofollow"
+                                                style="display:block;width:20px;height:20px;"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /服务 -->
+                    <!-- 底部 -->
+                    <div class="footer-container" style="padding-bottom:0px;">
+                        <div class="footer">
+                            <div class="footer-warrant-area clearfix">
+                                <p class="footer-warrant-logo fl">
+                                    <a href="#"><img
+                                            src="https://res.vmallres.com/pimages//sale/2019-01/wLelYbpMVWbj9Xpaa5Fk.png"
+                                            title="vmall.png" style="float:none;"></a>
+                                </p>
+                                <div class="fl" style="max-width: 840px;">
+                                    <ul class="footer-warrant-link">
+                                        <li><a href="#">华为集团</a></li>
+                                        <li><a href="#">华为CBG官网</a></li>
+                                        <li><a href="http://www.honor.cn/">荣耀官网</a></li>
+                                        <li><a href="https://club.huawei.com/">花粉俱乐部</a></li>
+                                        <li><a href="http://appstore.huawei.com/">华为应用市场</a></li>
+                                        <li><a href="https://emui.huawei.com/cn/">EMUI</a></li>
+                                        <li><a href="https://cloud.huawei.com">华为终端云空间</a></li>
+                                        <li><a href="https://developer.huawei.com/cn/">开发者联盟</a></li>
+                                        <li><a href="https://m.vmall.com/">华为商城手机版</a></li>
+                                        <li><a href="https://www.vmall.com/shopdc/sitemap.html">网站地图</a></li>
+                                    </ul>
+
+                                    <a class="f-warrant" href="https://www.vmall.com/help/faq-2635.html" target="_blank"
+                                        title="隐私声明">隐私声明</a>
+                                    <a class="f-warrant" href="https://www.vmall.com/help/faq-778.html" target="_blank"
+                                        title="服务协议">服务协议</a>
+                                    <a class="f-warrant" href="https://www.vmall.com/help/faq-11810.html"
+                                        target="_blank" title="COOKIES">COOKIES</a>
+                                    <em class="f-warrant">Copyright © 2012-2019 华为终端有限公司 版权所有</em>
+                                    <em class="f-warrant">|</em>
+                                    <a class="f-warrant" href="http://www.miitbeian.gov.cn/" target="_blank"
+                                        title="粤ICP备19015064号-4">粤ICP备19015064号-4</a>
+                                    <em class="f-warrant">|</em>
+                                    <em class="f-warrant">备案主体编号：32201911426827</em>
+                                    <br>
+                                </div>
+                                <p class="fr footer-warrant-img">
+                                    <a class="fl"
+                                        href="http://privacy.truste.com/privacy-seal/validation?rid=81be9ca0-c821-4e2c-ad4b-ff7cff98f75f〈=zh-cn"
+                                        target="_blank"><img
+                                            src="https://res.vmallres.com/pimages//sale/2018-05/20180522101715775.jpg"
+                                            alt="TRUSTe隐私认证" title="TRUSTe隐私认证"></a>
+                                    <a class="fl"
+                                        href="https://res.vmallres.com/pimages///sale/2019-04/Vhy8y3yxVJXg0FE74dh0.png"
+                                        target="_blank"><img
+                                            src="https://res.vmallres.com/pimages//template/content/2016/20160226162415360.png"
+                                            alt="电子营业执照" title="电子营业执照"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /底部 -->
+                </div>
+            </div>
+            <div class="J_mod mod-eqfooter mod-eqfooter-656268" data-style="" style="background:url() no-repeat center center #F0F0F0;">
+                <div class="footer">
+                    <div class="div">
+                        <a href="#gps-0" >返回顶部</a>
+                    </div>
+                    <div class="div">
+                        <a href="https://www.vmall.com/notice-8390" target="_blank" >活动规则</a>
+                    </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

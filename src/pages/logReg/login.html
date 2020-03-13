@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/login.css">
+    <script src="../../static/scripts/require.js" data-main="./index2.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div>
+        <div class="customer-header">
+            <div class="head_center">
+                <div class="main-logo adHeadPicContainer"> <img
+                        src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_41/logos/HUAWEI.png" class="adHeadPic"> </div>
+                <div class="website-name"> <b style="font-size: 18px;margin-top: -5px;float: left;color:#cccccc;">|</b>
+                    <b class="adHeadTitle">华为商城</b> </div>
+            </div>
+        </div>
+        <span>
+            <div
+                style="background: #FFFBE4;display: block;height: 40px;text-align: center;line-height: 40px;color: #989898;">
+                <span class="prompt_icon" id="ad1">依据《网络安全法》，为保障您的帐号安全与正常使用，请尽快绑定您的手机号，感谢您的理解及支持！</span>
+            </div>
+        </span>
+        <div class="login_bg" id="loginform">
+            <div style="background-image: url('https://id1.cloud.huawei.com/CAS/up/idmw_rss_41/ads/login_default_bg.png');"
+                class="g login_adBg">
+                <div class="login-area login-right login-area-box">
+                    <div class="userAccountLogin">
+                        <div class="h">
+                            <span class="loginTitle loginTitle-left actived" data-type="account">帐号登录</span><span
+                                class="loginTitle splitLine loginTitle-right" data-type="qrCode">扫码登录</span>
+                        </div>
+                        <div class="b-account">
+                            <div class="login-form-marginTop">
+                                <div class="form-edit-area loginEventForm">
+                                    <div class="userAccountLogin-errorTipsDiv" id="errorTip"></div>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="user-input-tr"><label class="lb_opacity_Class"
+                                                        style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 0px; padding-top: 0px;"
+                                                        for="login_userName">
+                                                        <div style="border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);"
+                                                            tabindex="-1" class="text vam">手机号/邮件地址/华为号</div>
+                                                    </label><input type="text" autocomplete="off" class="text vam"
+                                                        id="login_userName" name="userAccount" maxlength="50"
+                                                        tabindex="1"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="user-input-tr"><label class="lb_opacity_Class"
+                                                        style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 0px; padding-top: 0px;"
+                                                        for="login_password">
+                                                        <div style="border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);"
+                                                            tabindex="-1" class="text vam">密码</div>
+                                                    </label><input oncut="return false;" oncopy="return false"
+                                                        id="login_password" type="password" autocomplete="off"
+                                                        class="text vam" name="password" maxlength="32" tabindex="2"
+                                                        readonly="readonly" onfocus="this.removeAttribute('readonly');"
+                                                        validator="validator21569119454599" style="z-index: 1;"></td>
+                                            </tr>
+                                            <tr>
+                                                <td id="picAuthCode" class="verify-td referenceTarget">
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mt-links lineHeightFix" id="operLinkTd">
+                                                    <span id="smsLoginEntrance" class="changeLoginType l"
+                                                        data-type="userAccountLogin" title="短信验证码登录"
+                                                        style="visibility: visible;"><i
+                                                            class="phoneIcon marginR6"></i>短信验证码登录</span>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div style="margin-bottom:0px;"><span class="vam error"
+                                                            id="login_msg" style="display:block"></span></div>
+                                                    <div class="button-login" id="btnLogin" data-type="accountLogin"
+                                                        tabindex="5">登录</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mt-checkbox">
+                                                    <span id="rememberNameSpan"><input type="checkbox"
+                                                            class="checkbox vam" id="remember_name" name="remember_name"
+                                                            tabindex="4"><label for="remember_name"><i
+                                                                id="remember_name_icon"
+                                                                class="checkBox-icon tick-off-icon marginR6"></i>记住华为帐号</label></span>
+                                                    <div class="hidden remeberTip" style="display: none;"></div>
+                                                    <span
+                                                        class="mt-links-float r clearWidth floatFix referenceTarget_login_more">
+                                                        <a class="btn-primary vam clearWidth" title="更多"
+                                                            id="btn-more">更多</a>
+                                                        <div class="set-more">
+                                                            <div id="more_list" class="more-list hiden">
+                                                                <ul>
+                                                                    <li id="goConFaq"
+                                                                        class="bottom_border pop_up_dialog security-menu">
+                                                                        遇到问题</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li id="appealLink"
+                                                                        class="bottom_border pop_up_dialog security-menu">
+                                                                        更换手机号</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li id="goSecurity"
+                                                                        class="pop_up_dialog security-menu">安全中心</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mt-links p0">
+                                                    <div class="mt-links-float vam clearWidth">
+                                                        <span class="regist"><a id="registText"
+                                                                class="btn-primary clearWidth" href=""
+                                                                title="注册帐号">注册帐号</a></span><span class="forgot"><a
+                                                                class="btn-primary clearWidth" href="javascript:void(0)"
+                                                                onclick="gotoresetpwd()" title="忘记密码？">忘记密码？</a></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="thirdLoginBlock">
+
+                                <div class="thirdLintTitle"><i class="line-left"></i><span
+                                        class="third-tips">其他方式登录</span><i class="line-right rotateImg"></i></div>
+
+                                <div class="thirdLoginDiv">
+                                    <span class="qqLogin_bigIco" title="QQ" onclick="thirdAccountBind(this)"><a
+                                            href="javascript:void(0);" tourl="/qq/authorize"><s></s></a>
+                                    </span>
+                                    <span class="alipayLogin_bigIco" title="支付宝" onclick="thirdAccountBind(this)"><a
+                                            href="javascript:void(0);" tourl="/alipay/authorize"><s></s></a></span>
+                                    <span class="weixinLogin_bigIco" title="微信" onclick="thirdAccountBind(this)"><a
+                                            href="javascript:void(0);" tourl="/weixin/authorize"><s></s></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="b-qrCode hiden" >
+                        <div class="qrCode-main">
+                            <div class="qrCode-content">
+                                <div id="qrcodeImg" style="left: 112px;">
+                                    <div class="qrcode" id="qrcode">
+                                    <div class="qrcode-over-time" style="display: none;">
+                                        <div class="refush-content hiden" style="display: none;">
+                                            <div class="des">二维码失效</div>
+                                            <div class="refush">刷新</div>
+                                        </div>
+                                        <div class="scan-success-content hiden" style="display: none;">
+                                            <div class="scan-success-img"></div>
+                                            <div class="scan-success">扫码成功</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="qrCode-help" style="opacity: 0;"></div>
+                            </div>
+                        </div>
+                        <div class="qrLogin-otherWayLink"></div>
+                    </div>
+                    <div class="qrCode-desc">
+                            <p>使用<span class="haweiapp">华为移动服务APP</span>扫一扫</p>
+                            <p>若您使用华为手机，请进入“设置”&gt;“华为帐号”扫码登录。</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- 底部  -->
+        <div class="customer-footer">
+            <div class="ft">
+                <!--授权  -->
+                <div class="warrant-area">
+                    <p style="text-align: center;line-height:20px;height:20px;">
+                        <a href="https://id1.cloud.huawei.com/AMW/portal/agreements/userAgreement/zh-cn_userAgreement.html?version=china&amp;countryCode=cn&amp;reqClientType=26"
+                            class="rule" target="_blank">华为帐号与云空间用户协议</a>
+                        <em class="foot_em">|</em>
+                        <a href="https://id1.cloud.huawei.com/AMW/portal/agreements/accPrivacyStatement/zh-cn_accPrivacyStatement.html?version=china&amp;reqClientType=26"
+                            class="rule" target="_blank">关于华为帐号与云空间隐私的声明</a>
+                        <span class="foot_em"><em style="font-style: normal">|</em> <a style="padding:0 10px;"
+                                target="blank"
+                                href="https://id1.cloud.huawei.com/AMW/portal/faq/zh-cn_faq.html?version=china&amp;countryCode=cn&amp;lang=zh-cn&amp;reqClientType=26">常见问题</a></span>
+                        <em class="foot_em">|</em>
+                        <a href="https://consumer.huawei.com/cn/legal/cookie-policy/" class="rule"
+                            target="_blank">Cookies</a>
+                    </p>
+                    <p style="text-align: center;line-height: 12px;height:12px;margin-top: 10px ">
+                        Copyright&nbsp;©&nbsp;2011-2019&nbsp;&nbsp;华为软件技术有限公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;保留一切权利&nbsp;&nbsp;苏B2-20070200号&nbsp;|&nbsp;苏ICP备09062682号-9
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+    "reservationInfo": {
+        "appBuyUrl": "",
+        "buyDesc": "",
+        "buyTime": 1568649599000,
+        "disPrdName": "华为儿童手表3S 0元预约",
+        "isShowCountDown": 0,
+        "isShowNum": 1,
+        "remainingTime": 0,
+        "reservationNumber": 5510,
+        "reservationStartTime": 1567600200000,
+        "reservationStopTime": 1568649599000,
+        "serverTime": 1568269695783,
+        "status": 1,
+        "wapBuyUrl": "",
+        "webBuyUrl": ""
+    },
+    "success": true
+}

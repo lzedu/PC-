@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/regLog.css">
+    <link rel="stylesheet" href="../../styles/intlTelInput.css">
+    <link rel="stylesheet" href="../../styles/demo.css">
+    <link rel="stylesheet" href="../../static/sheets/calendar.css">
+    <link rel="stylesheet" href="../../static/sheets/swiper.css">
+    <link rel="stylesheet" href="../../static/sheets/style_https.1.0.3.css">
+    <link rel="stylesheet" href="../../static/sheets/niceCountryInput.css">
+    <script src="../../static/scripts/require.js" data-main="index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+</head>
+
+<body>
+    <div class="head-background">
+        <div class="head_center">
+            <div class="main-logo adHeadPicContainer" style="width:143px"> <img
+                    src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_41/logos/head-top.png" class="wihteBgPic"> </div>
+            <div class="website-name"> <b style="font-size: 18px;margin-top: -5px;float: left;color:#cccccc;">|</b> <b
+                    style="font-size: 18px;margin-top: -3px;float: left; margin-left:18px;">华为商城</b> </div>
+        </div>
+    </div>
+    <div class="wp1 relative">
+        <div class="register-content" id="registerForm">
+            <div class="reg-tab clearFix" style="visibility: visible;">
+                <a class="phone-wrap l sel" href="javascript:void(0)"> <i
+                        class="phone-icon"></i>
+                    <span id="tabPhone" class="tab-phone" style="width: 66px;">手机号</span>
+                </a>
+                <a class="mail-wrap l" href="javascript:void(0)"> <i
+                        class="mail-icon"></i>
+                    <span id="tabMail" class="tab-email" style="width: 66px;">电子邮箱</span>
+                </a>
+            </div>
+            <div class="login r">
+                已有华为帐号
+                <a href="./login.html" class="login-a" title="登录">登录</a><span class="ar-eg-opposite">&gt;</span>
+            </div>
+
+
+            <div class="reg-detail">
+
+                <div class="registerTitle">
+                    <div class="mianTitle">注册华为帐号</div>
+                    <div class="subTitle">用于访问所有华为终端云服务</div>
+                </div>
+                <!-- 选择国家开始 -->
+
+                <div class="input-container" id="chooseCountry">
+                    <div class="l input-left">
+                        国家/地区
+                    </div>
+                    <div class="input-content" style="margin-left: 123px;">
+                        <div class="node-input ddrop-EMU5" id="selectCountryImg">
+                            <div class="dropMenu">
+                                <span class="select-text ">中国</span>
+                                <div class="select-ico"></div>
+                            </div>
+                            <div class="droplist">
+                                <!-- <div id="testinput" class="orderContainer" data-selectedcountry="US" data-showspecial="false"
+                                data-showflags="true" data-i18nall="All selected" data-i18nnofilter="No selection" 
+                                data-i18nfilter="Filter"  data-onchangecallback="onChangeCallback">
+                                </div> -->
+                                <input type="tel" id="mobile-number" placeholder="e.g. +1 702 123 4567">
+                            </div>
+                        </div>
+                        <div id="selectedCountry" style="display: none;">中国</div>
+
+                        <!-- 提示正在登陆的帐号 -->
+                        <div id="regXCountry" class="node-intro" style="display: none;">您正在注册中国的华为帐号。</div>
+                    </div>
+                </div>
+
+                <!-- 邮箱 -->
+                <div class="input-container" id="errormsgemail-box">
+                    <div class="l input-left">
+                    邮件地址
+                    </div>
+                    
+                    <div class="r input-right">
+                   
+                    </div>
+                    <div class="input-content">
+
+                    <label class="lb_opacity_Class" sfor="username"><div tabindex="-1" class="text">请输入邮件地址</div></label><input type="text" class="text" name="formBean.username" tabindex="1" id="username" maxlength="50" autocomplete="off">                  
+                        </div>	
+                    </div>
+                <!--手机号码 -->
+
+                <div class="input-container" id="phoneInputDiv-box">
+                    <div class="l input-left">
+                        <input id="countryCode" type="hidden" name="" autocomplete="off" readonly="readonly"
+                            onfocus="this.removeAttribute('readonly');" value="0086">
+                        <div id="input_languageCode" class="ddrop-EMU5">
+                            <div class="dropMenu"><input type="hidden" class="selectVal" value="0086"><span class="select-text ">+86(中国)</span>
+                                <div class="select-ico"></div>
+                            </div>
+                            <div class="droplist">
+                                <div class="orderContainer">
+                                    <div class="input-div">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="r input-right"></div>
+                    <div class="input-content">
+                        <label class="lb_opacity_Class"
+                            style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 0px; padding-top: 10px;"
+                            for="username">
+                            <div style="border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);"
+                                tabindex="-1" class="text input-number">请输入手机号</div>
+                        </label><input id="username" class="text input-number" type="text" value=""
+                            name="formBean.username" maxlength="50" tabindex="1" autocomplete="off" readonly="readonly"
+                            onfocus="this.removeAttribute('readonly');" validator="validator11568967099777"
+                            style="z-index: 1;">
+                    </div>
+                </div>
+                <div id="msg_phone"></div>
+
+                <!-- 验证码 -->
+
+                <div class="input-container" id="randomCodeDiv">
+                    <div id="picAuthCode" class="input-area randomCodeUI6">
+                        <div id="captcha1">
+                             <input type="hidden" id="captchaInfo"
+                                captchaurl="https://id1.cloud.huawei.com/Captcha" captchawidth="100%"
+                                captchaproduct="float" captchalang="zh-cn">
+                            <div id="wait1" class="captchaLoading" style="display: none;"><i class="loadImg"></i></div>
+                        </div>
+                    </div>
+                    <div id="randomCode_msg" class="error-tips-EMUI6"></div>
+                </div>
+                <div class="input-container" id="errRandomCode-box">
+                    <div class="l input-left">
+                        短信验证码
+                    </div>
+                    <div class="r input-right">
+                        <input type="button" class="get-code dbtn2" autocomplete="off" id="getValiCode"
+                            intervaltime="60" onclick="getMobileCode(4,'p_reg_phone_session_ramdom_code_key',26,'zh')"
+                            value="获取验证码" readonly="readonly" onfocus="this.removeAttribute('readonly');"> <span
+                            id="msg_getPhoneRandomCode" style="position: relative; top: 34px;"></span>
+                        <b id="authCodeRightSms" class="authCodeRightPosFix" datavalue="false"></b>
+                    </div>
+                    <div class="input-content">
+                        <label class="lb_opacity_Class"
+                            style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 0px; padding-top: 10px;"
+                            for="authCode">
+                            <div style="border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);"
+                                tabindex="-1" class="verify vam ime-disabled text">请输入短信验证码</div>
+                        </label><input type="text" autocomplete="off" class="verify vam ime-disabled text" id="authCode"
+                            tabindex="3" style="vertical-align: middle; z-index: 1;" name="formBean.authCode"
+                            maxlength="8" readonly="readonly" onfocus="this.removeAttribute('readonly');"
+                            validator="validator41568967099777">
+                    </div>
+                </div>
+                <div id="msg_phoneRandomCode"></div>
+                <!-- 邮箱验证码 -->
+                <div class="input-container  emailBox" id="errRandomCode-box">
+                        <div class="l input-left">
+                        邮件验证码
+                        </div>
+                        <div class="r input-right">
+                            <input type="button" class="get-code dbtn2" id="getValiCode" intervaltime="60"  value="获取验证码">
+                                <span id="msg_getPhoneRandomCode" style="position:relative;top:34px;"></span>
+                        </div> 
+                        
+                        <div class="input-content">
+                            <label class="lb_opacity_Class"  for="authCode">
+                                <div tabindex="-1" class="verify vam ime-disabled text">请输入邮件验证码</div>
+                            </label>
+                            <input type="text" autocomplete="off" class="verify vam ime-disabled text" id="authCode"  name="formBean.authCode" maxlength="8" tabindex="3" readonly="readonly">
+                            <b id="emailAuthCodeRight" class="authCodeRightPosFix" datavalue="false"></b>
+                        </div>
+                    </div>
+                <!-- 设置密码 -->
+                <div class="set-password">
+                    <div class="input-container" id="pwdDiv">
+                        <div class="l input-left">
+                            密码
+                        </div>
+                        <div class="input-content">
+                            <label class="lb_opacity_Class"
+                                style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 0px; padding-top: 10px;"
+                                for="password">
+                                <div style="border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);"
+                                    tabindex="-1" class="pwd-input text">请输入密码</div>
+                            </label><input  type="password"
+                                autocomplete="off" class="pwd-input text" id="password" name="formBean.password"
+                                maxlength="32" tabindex="4" readonly="readonly"
+                                onfocus="this.removeAttribute('readonly');" validator="validator21568967099777"
+                                style="z-index: 1;">
+                        </div>
+                    </div>
+                    <div id="msg_password"></div>
+                    <div id="pwd_check_dialog"></div>
+
+                    <div class="input-container " id="confirmpwdDiv">
+                        <div class="l input-left">
+                            确认密码
+                        </div>
+                        <div class="input-content">
+                            <label class="lb_opacity_Class"
+                                style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 0px; padding-top: 10px;"
+                                for="confirmPwd">
+                                <div style="border: none; background: transparent; cursor: text; margin: 2px; color: rgb(204, 204, 204);"
+                                    tabindex="-1" class="text vam">请再次输入密码</div>
+                            </label><input oncut="return false;" oncopy="return false" id="confirmPwd" type="password"
+                                autocomplete="off" class="text vam" name="checkPassword" maxlength="32" tabindex="5"
+                                readonly="readonly" onfocus="this.removeAttribute('readonly');"
+                                validator="validator31568967099777" style="z-index: 1;">
+                        </div>
+                    </div>
+                    <div id="msg_checkPassword"></div>
+                    <div id="birthDateBox" class="relative">
+                        <div class="input-container input-birthday" id="birthDateWrap">
+                            <div class="l input-left">出生日期</div>
+                            <div class="input-content birthDateContent" style="margin-left: 123px;">
+                                <div id="birthDate" class="birthday-choose l">
+                                    <div> <input class="year" type="hidden" value="1999"><input class="month"
+                                            type="hidden" value="N"> <input class="day" type="date" value="N">
+                                        <div class="yearDiv dateItems ddrop-EMU5"><input type="hidden"
+                                                value=""><span class="select-text ">1999</span><span class="suffix"
+                                                style="color: rgb(51, 51, 51);">年</span>
+                                            <div class="select-ico"></div>
+                                            <ul class="dpmenu-EMU5 dpmenu-EMUI5-down">
+                                            </ul>
+                                        </div>
+                                        <div class="monthDiv dateItems ddrop-EMU5"><input type="hidden" value="1"><span
+                                                class="select-text " style="visibility: hidden;">1</span><span
+                                                class="suffix" style="color:#999">月</span>
+                                            <div class="select-ico"></div>
+                                            <ul class="dpmenu-EMU5 dpmenu-EMUI5-down"
+                                                style="display: none; overflow-y: scroll; min-width: 156px; max-width: 310px; width: 136px;">
+                                                <div class="flow-top"></div>
+                                            </ul>
+                                        </div>
+                                        <div class="dayDiv dateItems ddrop-EMU5"><input type="hidden" value="1"><span
+                                                class="select-text " style="visibility: hidden;">1</span><span
+                                                class="suffix" style="color:#999">日</span>
+                                            <div class="select-ico"></div>
+                                            <ul class="dpmenu-EMU5 dpmenu-EMUI5-down"
+                                                style="display: none; overflow-y: scroll; min-width: 156px; max-width: 310px; width: 136px;">
+                                                <div class="flow-top"></div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="birthdayError"></div>
+                        <div class="helpTipBox" style="right: -24px;">
+                            <div class="helpTip visib-hidden">
+                                <div class="guide_bg">您的出生日期用于确定您在法律范围内可以使用的服务</div>
+                                <div class="guide_triangle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 协议 -->
+                    <!-- 按钮 -->
+                    <div class="reg-btn">
+                        <input type="button" class="btn btn-reg sel" id="btnSubmit" value="注册" tabindex="7">
+                        <div id="register_msg" style="position: relative; left: 26%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-shadow"></div>
+            <input type="hidden" id="countryRegion" value="1-cn">
+            <div id="selectCountryCodeDiv"></div>
+            <div id="notCurrentSiteWarning"></div>
+
+            <!-- 底部  -->
+            <!-- 用于展示所有支持的国家 -->
+            <div class="wp1 ft">
+                <div class="reg-content">
+                    <p class="footer">
+                        <a id="foot_EULA"
+                            href="https://id1.cloud.huawei.com/AMW/portal/agreements/userAgreement/zh-cn_userAgreement.html?version=china&amp;countryCode=cn&amp;reqClientType=26"
+                            class="rule" target="_blank">华为帐号与云空间用户协议</a>
+                        <em class="foot_em">|</em>
+                        <a id="foot_privacy"
+                            href="https://id1.cloud.huawei.com/AMW/portal/agreements/accPrivacyStatement/zh-cn_accPrivacyStatement.html?version=china&amp;reqClientType=26"
+                            class="rule" target="_blank">关于华为帐号与云空间隐私的声明</a>
+                        <span id="faqPart" class="foot_em"><em>|</em> <a style="padding:0 10px;" target="blank"
+                                href="https://id1.cloud.huawei.com/AMW/portal/faq/zh-cn_faq.html?version=china&amp;countryCode=cn&amp;lang=zh-cn&amp;reqClientType=26">常见问题</a></span>
+                        <span id="cookieBox">
+                            <em class="foot_em">|</em>
+                            <a id="foot_cookies" href="https://consumer.huawei.com/cn/legal/cookie-policy/" class="rule"
+                                target="_blank">Cookies</a>
+                        </span>
+                    </p>
+                    <p id="copyrightPart" class="footer">
+                        Copyright&nbsp;©&nbsp;2011-2019&nbsp;&nbsp;华为软件技术有限公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;保留一切权利&nbsp;&nbsp;苏B2-20070200号&nbsp;|&nbsp;苏ICP备09062682号-9
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

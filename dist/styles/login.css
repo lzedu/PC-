@@ -1,0 +1,631 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+body, button, input, select, textarea {
+  font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #b7b7b7;
+}
+
+li {
+  list-style: none;
+}
+
+b {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+em {
+  font-weight: normal;
+  font-style: normal;
+}
+
+body .customer-header {
+  background-color: #eee;
+}
+
+body .head_center {
+  width: auto;
+  max-width: 998px;
+  height: 67px;
+  width: 998px;
+  margin: 0 auto;
+  border: 0;
+  position: relative;
+}
+
+body .head_center .main-logo {
+  position: static;
+  left: 2px;
+  float: left;
+}
+
+body .head_center .main-logo img {
+  margin-left: 4px;
+  margin-top: 17px;
+}
+
+body .adHeadPicContainer {
+  margin-right: 20px;
+}
+
+body .main-logo {
+  padding-left: 0;
+  float: left;
+}
+
+body .website-name {
+  color: white;
+  font-size: 20px;
+  line-height: 50px;
+  font-family: "arial";
+  padding-top: 14px;
+}
+
+body .adHeadTitle {
+  color: #333;
+  font-size: 18px;
+  margin-top: -3px;
+  float: left;
+  margin-left: 20px;
+}
+
+body .login_bg {
+  background-color: #081638;
+}
+
+body .login_adBg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+body .g {
+  width: 1130px;
+  margin: 0 auto;
+  zoom: 1;
+  position: relative;
+}
+
+body .g::after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+body .login-area-box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 530px;
+  position: relative;
+}
+
+body .login-right {
+  width: 380px;
+  float: right;
+  background-color: #fff;
+}
+
+body .login-area .h, body .login-div .h, body .login-area .sms-h {
+  width: 100%;
+  margin: 24px auto;
+  text-align: center;
+}
+
+body .login-area .h .actived, body .login-div .h .actived, body .login-area .sms-h .actived {
+  color: #b40707;
+}
+
+body .login-area .h span, body .login-div .h span {
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  width: 169px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+body .loginTitle {
+  font-family: "Microsoft YaHei" !important;
+}
+
+body .login-area .h .splitLine, body .login-div .h .splitLine {
+  border-left: 1px solid #ccc;
+}
+
+body .sms-b, body .b-account {
+  width: 328px;
+  margin: 0 auto;
+}
+
+body .userAccountLogin-errorTipsDiv, body .twice-userAccountLogin-errorTipsDiv, body .smsValidateLogin-errorTipsDiv {
+  font-size: 12px;
+  color: #ff3320;
+  line-height: 1.3;
+  min-height: 15px;
+}
+
+body .login-div .form-edit-area table, body .login-area .form-edit-area table {
+  width: 328px;
+}
+
+body .form-edit-area th, body .form-edit-area td {
+  padding: 0;
+}
+
+body td {
+  word-break: break-all;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+body .user-input-tr {
+  border-bottom: 1px solid #ccc;
+  height: 46px;
+}
+
+body .form-edit-area .lb_opacity_Class div {
+  padding: 0;
+  margin: 0 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 328px;
+}
+
+body .form-edit-area .text {
+  width: 100%;
+}
+
+body .lb_opacity_Class {
+  padding-top: 0 !important;
+}
+
+body .form-edit-area .text, body .form-edit-area .verify {
+  border: 0;
+  *border: 0;
+  color: #333;
+  font-size: 14px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 0;
+}
+
+body .form-edit-area td.mt-links {
+  padding: 16px 0;
+  text-align: center;
+  line-height: 1.3;
+}
+
+body .lineHeightFix {
+  line-height: 1 !important;
+}
+
+body .form-edit-area th, body .form-edit-area td {
+  padding: 0;
+}
+
+body .changeLoginType {
+  color: #007dff;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+body .l {
+  float: left;
+}
+
+body .form-edit-area td.mt-links {
+  padding: 16px 0;
+  text-align: center;
+  line-height: 1.3;
+}
+
+body .marginR6 {
+  margin-right: 6px;
+}
+
+body .phoneIcon {
+  width: 11px;
+  height: 15px;
+  background-image: url(../static/images/ic_smsLogin.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: -2px 0;
+  margin-bottom: -3px;
+}
+
+body .vam {
+  vertical-align: middle;
+}
+
+body .button-login {
+  background-color: #b40707;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b40707;
+  color: #fff;
+}
+
+body .button-login {
+  font-family: "Microsoft YaHei" !important;
+  width: 326px;
+  border-radius: 0;
+  line-height: 44px;
+  height: 44px;
+  font-weight: bold;
+  font-size: 14px;
+  background-image: none;
+  cursor: pointer;
+  border-radius: 26px;
+  text-align: center;
+  margin-top: 0;
+}
+
+body .form-edit-area td.mt-checkbox {
+  padding: 16px 0;
+  position: relative;
+}
+
+body #remember_name, body #remember_smsName {
+  left: -10000px;
+  position: absolute;
+  top: -100000px;
+}
+
+body .radio, body .checkbox {
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+body .vam {
+  vertical-align: middle;
+}
+
+body .form-edit-area #rememberNameSpan label, body .form-edit-area #sms-rememberNameSpan label {
+  cursor: pointer;
+}
+
+body .marginR6 {
+  margin-right: 6px;
+}
+
+body .tick-off-icon {
+  left: 0;
+}
+
+body .tick-off-icon {
+  width: 18px;
+  height: 18px;
+  background-image: url(../static/images/tick-off-18.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-bottom: -4px;
+}
+
+body .referenceTarget_login_more {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body .r {
+  float: right;
+}
+
+body .form-edit-area a.vam {
+  font-family: Tahoma;
+}
+
+body .form-edit-area .btn-primary {
+  color: #007dff;
+}
+
+body .set-more {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+
+body .set-more .more-list {
+  position: absolute;
+  top: 10px;
+  right: -14px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-collapse: separate;
+  background: #fff;
+}
+
+body .set-more .more-list li {
+  height: 48px;
+  line-height: 48px;
+  font-size: 15px;
+  color: #000;
+  word-break: keep-all;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+body .hiden {
+  display: none;
+}
+
+body .bottom_border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+body .pop_up_dialog {
+  height: 48px;
+  line-height: 48px;
+}
+
+body .form-edit-area td.mt-links .mt-links-float {
+  text-align: center;
+}
+
+body .form-edit-area .regist {
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+  text-align: right;
+  color: #999;
+}
+
+body .form-edit-area .btn-primary {
+  color: #007dff;
+}
+
+body .form-edit-area .forgot {
+  padding-left: 10px;
+  text-align: left;
+  color: #999;
+}
+
+body .login-div .form-edit-area table, body .login-area .form-edit-area table {
+  width: 328px;
+}
+
+body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body .thirdLoginBlock {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  color: #999;
+  line-height: 16px;
+}
+
+body .thirdLintTitle {
+  position: relative;
+  width: 328px;
+  margin-bottom: 10px;
+}
+
+body .thirdLintTitle .third-tips {
+  color: #ccc;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 190px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+body .thirdLintTitle .line-left {
+  left: 0;
+  top: 50%;
+  background-image: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_41/css/portal/vmall_rss/loginEMUIV6/img/thirdLine.png);
+  background-repeat: no-repeat;
+  height: 1px;
+  position: absolute;
+  width: 94px;
+  background-size: cover;
+}
+
+body .thirdLintTitle .line-right {
+  right: 0;
+  bottom: 50%;
+  background-image: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_41/css/portal/vmall_rss/loginEMUIV6/img/thirdLine-reverse.png);
+  background-repeat: no-repeat;
+  height: 1px;
+  position: absolute;
+  width: 94px;
+  background-size: cover;
+}
+
+body .thirdLoginDiv {
+  width: 328px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+body .thirdLoginDiv span {
+  padding: 0 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+body .qqLogin_bigIco a {
+  background-image: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_41/css/portal/vmall_rss/loginEMUIV6/img/third_login.png);
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+  float: none;
+  background-position: -72px -9px;
+}
+
+body .qqLogin_bigIco a:hover {
+  background-position: -72px -55px;
+}
+
+body .alipayLogin_bigIco a {
+  background-image: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_41/css/portal/vmall_rss/loginEMUIV6/img/third_login.png);
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+  float: none;
+  background-position: -132px -9px;
+}
+
+body .alipayLogin_bigIco a:hover {
+  background-position: -132px -55px;
+}
+
+body .weixinLogin_bigIco a {
+  background-image: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_41/css/portal/vmall_rss/loginEMUIV6/img/third_login.png);
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+  float: none;
+  background-position: -12px -9px;
+}
+
+body .weixinLogin_bigIco a:hover {
+  background-position: -12px -55px;
+}
+
+body s {
+  text-decoration: none;
+}
+
+body .ft {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+
+body .ft p {
+  display: inline-block;
+  line-height: 24px;
+}
+
+body .ft p a {
+  font-size: 12px;
+  color: #999;
+}
+
+body .ft p:first-child {
+  display: block;
+}
+
+body .rule {
+  padding: 0 10px;
+}
+
+body .foot_em {
+  font-size: 16px;
+}
+
+body .b-qrCode .qrCode-main {
+  height: 262px;
+  position: relative;
+}
+
+body .b-qrCode .qrCode-desc {
+  margin-bottom: 24px;
+  padding: 0 10px;
+}
+
+body .qrLogin-otherWayLink {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+}
+
+body .qrCode-content {
+  text-align: center;
+  top: 34px;
+  position: relative;
+  margin: 0 auto;
+}
+
+body #qrcodeImg {
+  top: 22px;
+  position: absolute;
+  display: inline-block;
+  width: 146px;
+  height: 146px;
+  z-index: 100;
+  vertical-align: middle;
+  padding: 5px;
+  background: #fff;
+}
+
+body .hiden {
+  display: none;
+}
+
+body #qrcodeImg img {
+  height: 100%;
+  width: 100%;
+}
+
+body .qrcode-over-time {
+  display: none;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
+}
+
+body .b-qrCode .qrCode-desc p {
+  font-size: 13px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+body .b-qrCode .qrCode-desc p {
+  font-size: 13px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+body .haweiapp {
+  color: #007dff;
+}
+
+body .b-qrCode .qrCode-main {
+  height: 262px;
+  position: relative;
+  overflow: hidden;
+}

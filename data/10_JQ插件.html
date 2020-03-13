@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .error{ color:red; }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+</head>
+<body>
+<form id="commentForm" action="">
+    <p>
+      <label for="username">用户名：</label>
+      <input id="cname" name="username" type="text">
+    </p> 
+    <p>
+        <label for="password">密码：</label>
+        <input id="password" name="password" type="text">
+    </p> 
+    <p>
+        <label for="password2">确认密码：</label>
+        <input id="password2" name="password2" type="text">
+    </p> 
+    <p>
+      <input class="submit" type="submit" value="Submit">
+    </p>
+</form>
+<script>
+
+    $("#commentForm").validate({
+        rules : {
+            username : {   // key为username的输入框，不能为空
+                required : true,
+                minlength : 3,
+                maxlength : 6  
+            },
+            password2 : {
+                equalTo : '#password'
+            }
+        },
+        messages : {
+            username : {
+                required : '用户名不能为空',
+                minlength : '多输点，好嘛！！',
+                maxlength : '输入过多哦~~'
+            },
+            password2 : {
+                equalTo : '两次输入不一样'
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

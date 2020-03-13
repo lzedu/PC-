@@ -1,0 +1,337 @@
+{
+    "msg": "操作成功",
+    "code": "200",
+    "data": [
+        {
+            "posname": "新品抢购",
+            "poslist": [
+                {
+                    "img": "https://res6.vmallres.com/pimages//product/6901443315901/428_428_1560916037515mp.png",
+                    "name": "黑鲨游戏手机2 Pro 12G+512G冰魄灰",
+                    "slogan": "骁龙855Plus芯片，独显DC调光2.0，液冷3.0+，屏幕压感，极速触控",
+                    "price": "3999",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19091229835_2",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://res1.vmallres.com/pimages//product/6901443272785/428_428_1543457093718mp.png",
+                    "name": "黑鲨游戏手机2 Pro 12G+512G电鸣黑",
+                    "slogan": "骁龙855Plus芯片，独显DC调光2.0，液冷3.0+，屏幕压感，极速触控",
+                    "price": "3999",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19091229835_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://res7.vmallres.com/pimages//product/6901443278176/428_428_1544693959065mp.png",
+                    "name": "黑鲨游戏手机2 Pro 12G+256G电鸣黑",
+                    "slogan": "骁龙855Plus，全系12GB，UFS3.0高速闪存，极速触控，屏幕压感，零售价2999起 ",
+                    "price": "3499",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19073058697_3",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://res1.vmallres.com/pimages//product/6901443292110/428_428_1552440645488mp.png",
+                    "name": "黑鲨游戏手机2 Pro 12G+128G电鸣灰",
+                    "slogan": "骁龙855Plus芯片，独显DC调光2.0，液冷3.0+，屏幕压感，极速触控",
+                    "price": "2999",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19073058697_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://res9.vmallres.com/pimages//product/6901443262199/428_428_1542770204265mp.png",
+                    "name": "黑鲨游戏手机2 Pro 12G+256G冰魄灰",
+                    "slogan": "骁龙855Plus芯片，独显DC调光2.0，液冷3.0+，屏幕压感，极速触控",
+                    "price": "3499",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19073058697_4",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://res1.vmallres.com/pimages//product/6901443292110/428_428_1552440645488mp.png",
+                    "name": "黑鲨游戏手机2 Pro 12G+256G冰魄灰",
+                    "slogan": "骁龙855Plus芯片，独显DC调光2.0，液冷3.0+，屏幕压感，极速触控",
+                    "price": "3499",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19073058697_4",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://res9.vmallres.com/pimages//product/6901443262199/428_428_1542770204265mp.png",
+                    "name": "黑鲨游戏手机2 Pro 12G+256G冰魄灰",
+                    "slogan": "骁龙855Plus芯片，独显DC调光2.0，液冷3.0+，屏幕压感，极速触控",
+                    "price": "3499",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19073058697_4",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://res8.vmallres.com/pimages//product/6901443323340/428_428_7C1CB8972D5541B58EAD394BB2686BE3897353C35C1603FFmp.png",
+                    "name": "黑鲨游戏手机2 Pro 12G+256G冰魄灰",
+                    "slogan": "骁龙855Plus芯片，独显DC调光2.0，液冷3.0+，屏幕压感，极速触控",
+                    "price": "3499",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19073058697_4",
+                    "jumptype": 1
+                }
+            ]
+        },
+        {
+            "posname": "黑鲨游戏手机2",
+            "poslist": [
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190530/20190530142221_137.png",
+                    "name": "8GB+256GB 幻境蓝",
+                    "slogan": "超强芯片骁龙855、电竞级电池+快充、塔式全域液冷系统",
+                    "price": "2899",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19052943694_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190530/20190530142257_203.png",
+                    "name": "12GB+256GB 幻境蓝",
+                    "slogan": "超强芯片骁龙855、电竞级电池+快充、塔式全域液冷系统",
+                    "price": "3299",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19052943694_2",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190529/20190529103851_638.png",
+                    "name": "8GB+128GB 冰封银",
+                    "slogan": "超强芯片骁龙855、电竞级电池+快充、塔式全域液冷系统",
+                    "price": "2699",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19031369162_4",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190318/20190318212245_294.png",
+                    "name": "12GB+256GB 冰封银",
+                    "slogan": "MagicPress立体操控、X+2天线、AI游戏引擎",
+                    "price": "3299",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19031369162_8",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190321/20190321233611_193.png",
+                    "name": "8GB+256GB 冰封银",
+                    "slogan": "超强芯片骁龙855、电竞级电池+快充、塔式全域液冷系统",
+                    "price": "2899",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19031369162_6",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190529/20190529105734_457.png",
+                    "name": "8GB+128GB 暗影黑",
+                    "slogan": "超强芯片骁龙855、电竞级电池+快充、塔式全域液冷系统",
+                    "price": "2699",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19031272278_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190529/20190529105901_703.png",
+                    "name": "8GB+256GB 暗影黑",
+                    "slogan": "超强芯片骁龙855、电竞级电池+快充、塔式全域液冷系统",
+                    "price": "2899",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19031369162_5",
+                    "jumptype": 1
+                }
+            ]
+        },
+        {
+            "posname": "黑鲨游戏手柄",
+            "poslist": [
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190826/20190826163112_886.png",
+                    "name": "黑鲨双向移动电源",
+                    "slogan": "18W双向快充、铠甲机身、一入三出、安全保障",
+                    "price": "119",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19082657149_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190827/20190827155954_607.jpg",
+                    "name": "黑鲨双翼手柄-右手 剑网3定制礼盒",
+                    "slogan": "官方授权、多键位操作、触感细腻、定制徽章&贴纸",
+                    "price": "199",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19082753698_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190521/20190521134338_476.png",
+                    "name": "黑鲨双翼手柄支架",
+                    "slogan": "竞速曲线DNA、秒变一体式手柄、主机游戏体验",
+                    "price": "79",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19052142765_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190423/20190423095105_576.png",
+                    "name": "黑鲨双翼手柄-左手（H66L）",
+                    "slogan": "弹夹造型 电竞手感/方便携带/滑轨组合 秒变掌机/蓝牙连接/按键功能自定义，需搭配黑鲨游戏手机滑轨保护壳",
+                    "price": "179",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K18102279542_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190114/20190114160553_902.png",
+                    "name": "黑鲨双翼手柄-右手（H66RS）官方标配",
+                    "slogan": "弹匣造型、电竞手感、小巧易携、一键开机、即插即用",
+                    "price": "199",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19010759285_1",
+                    "jumptype": 1
+                }
+            ]
+        },
+        {
+            "posname": "黑鲨游戏壳/膜",
+            "poslist": [
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190917/20190917170103_249.png",
+                    "name": "黑鲨游戏手机2 Pro 双滑轨保护壳 电鸣黑",
+                    "slogan": "X造型、握感舒适、灯带外露、贴合防护、掌机模式",
+                    "price": "69",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19081068796_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190902/20190902154157_777.jpg",
+                    "name": "黑鲨游戏手机2 Pro 极简边框保护壳 电鸣黑",
+                    "slogan": "造型独特、轻盈镂空、贴合保护、配合单边支架可拓展左手柄",
+                    "price": "29",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19090256079_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190819/20190819163553_812.jpg",
+                    "name": "黑鲨游戏手机2 Pro 极简边框保护壳 冰魄灰",
+                    "slogan": "造型独特、轻盈镂空、贴合保护、可拓展手柄",
+                    "price": "29",
+                    "tag": "1",
+                    "jumpurl": "detail.html?skusn=K19081957059_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190731/20190731164554_953.png",
+                    "name": "黑鲨2双滑轨保护壳 CF定制版（王者之心）银色",
+                    "slogan": "生为竞技，只为实现手游玩家的枪战梦",
+                    "price": "99",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19062151029_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190503/20190503123028_155.png",
+                    "name": "黑鲨游戏手机2 双滑轨保护壳",
+                    "slogan": "跑车引擎设计、凯夫拉炭纤维纹理、全方位保护、黑鲨双翼手柄载体",
+                    "price": "69",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19032772330_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190423/20190423180650_283.jpg",
+                    "name": "黑鲨2双滑轨保护壳-崩坏3定制版 黑色",
+                    "slogan": "米哈游官方正版授权、生为竞技、为美好而战",
+                    "price": "99",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19042252728_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190508/20190508095854_129.png",
+                    "name": "黑鲨游戏手机Helo 双轨保护壳（BC16)",
+                    "slogan": "全包设计、一壳两用、软硬兼施柔韧细腻",
+                    "price": "69",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K18121463556_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190415/20190415145345_819.jpg",
+                    "name": "黑鲨游戏手机2软胶保护壳-崩坏3定制版",
+                    "slogan": "米哈游官方正版授权、生为竞技、为美好而战",
+                    "price": "49",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19041552754_1\t",
+                    "jumptype": 1
+                }
+            ]
+        },
+        {
+            "posname": "游戏耳机/适配器/数据线",
+            "poslist": [
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190729/20190729172942_892.png",
+                    "name": "黑鲨 27W 快速充电器 黑色",
+                    "slogan": "27W高效快充、智能适配、安全耐用",
+                    "price": "49",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K18112739508_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190715/20190715111834_208.jpg",
+                    "name": "咕咚（codoon）专业无线蓝牙、心率监测、运动Quiet耳",
+                    "slogan": "专业无线蓝牙运动Quiet耳机、跑步健身音乐游戏、心率监测、降噪、入耳式防水耳机",
+                    "price": "299",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19071537992_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190312/20190312143009_143.png",
+                    "name": "黑鲨Type-C直角数据线",
+                    "slogan": "3A大电流、90°简约设计、编织铠甲线",
+                    "price": "49",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19031251412_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190320/20190320165117_867.png",
+                    "name": "黑鲨Type-C耳机（BE07）游戏耳机 半入耳式 黑色",
+                    "slogan": "半入耳人体工学设计、专业级调音高保真音质、三键线控音乐电话随意切换",
+                    "price": "99",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K18121160618_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190424/20190424180314_186.png",
+                    "name": "黑鲨Type-C转HDMI线",
+                    "slogan": "编织线材质、镀金工艺、音频视频同步、4K*2K高清分辨率",
+                    "price": "179",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K19042462959_1",
+                    "jumptype": 1
+                },
+                {
+                    "img": "https://shop-1256119282.file.myqcloud.com/blackshark/20190729/20190729170856_685.jpg",
+                    "name": "黑鲨type-c快充数据线",
+                    "slogan": "3A大电流快充、支持过热保护不伤手机、1M线长设计不易缠绕",
+                    "price": "14.9",
+                    "tag": "0",
+                    "jumpurl": "detail.html?skusn=K18112739397_1",
+                    "jumptype": 1
+                }
+            ]
+        }
+    ]
+}

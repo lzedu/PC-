@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../../static/sheets/main.min.css">
+    <link rel="stylesheet" href="../../styles/proDetail.css">
+    <link rel="stylesheet" href="../../static/sheets/calendar.css">
+    <link rel="stylesheet" href="../../static/sheets/swiper.css">
+
+    <script src="../../static/scripts/require.js" data-main="index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="J_page">
+        <div class="J_row clearfix">
+            <div class="J_col col-side-full clearfix">
+                <div class="shortcut">
+                    <div class="layout">
+                        <div class="s-sub">
+                            <ul>
+                                <li><a href="/">首页</a></li>
+                                <li><a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a></li>
+                                <li><a href="http://www.honor.cn/" target="_blank">荣耀官网</a></li>
+                                <li><a href="http://club.huawei.com" target="_blank">花粉俱乐部</a></li>
+                                <li><a href="/priority" rel="nofollow">V码(优购码)</a></li>
+                                <li><a href="#/company" target="_blank">企业购</a></li>
+                                <li class="s-hwep hide" id="li-enterprise-preferential"></li>
+                                <li><a id="showSelectRegion" href="javascript:;">Select Region</a></li>
+                            </ul>
+                        </div>
+                        <div class="s-main">
+                            <ul>
+                                <li id="unlogin_status">
+                                    <div id="top_unlogin" class="header-toolbar">
+                                        <div class="header-toolbar-item">
+                                            <div class="">
+                                                <a id="top-index-loginUrl" href="javascript:;" rel="nofollow">请登录</a>
+                                                <a href="javascript:;" rel="nofollow">&nbsp;&nbsp;注册</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" timetype="timestamp">我的订单</a>
+                                </li>
+                                <li>
+                                    <div class="s-dropdown s-dropdown-link">
+                                        <div class="h">
+                                            <a class="icon-dropdown">客户服务</a>
+                                        </div>
+                                        <div class="b">
+                                            <div class="dropdown-more">
+                                                <dl>
+                                                    <dt><a href="#" target="_blank">帮助中心</a></dt>
+                                                    <dt><a href="#" target="_blank">联系客服</a></dt>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="s-dropdown">
+                                        <div class="h">
+                                            <a href="#" target="_blank" class="icon-dropdown">网站导航</a>
+                                        </div>
+                                        <div class="b">
+                                            <div class="dropdown-navs clearfix">
+                                                <p><a href="#"></a></p>
+                                                <div class="dropdown-navs-icon">
+                                                    <a href="#">商城首页</a>
+                                                </div>
+                                                <p><br></p>
+                                                <dl>
+                                                    <dt>频道</dt>
+                                                    <dd>
+                                                        <div class="item">
+                                                            <a href="#/huawei" target="_blank">华为专区</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/honor" target="_blank">荣耀专区</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#" target="_blank">企业购</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>产品</dt>
+                                                    <dd>
+                                                        <div class="item">
+                                                            <a href="#/list-36" target="_blank">手机</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/list-43" target="_blank">智能家居</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/list-40" target="_blank">平板&amp;笔记本</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/list-54" target="_blank">通用配件</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/list-59" target="_blank">智能穿戴</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/list-47" target="_blank">专属配件</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>增值服务</dt>
+                                                    <dd>
+                                                        <div class="item">
+                                                            <a href="#/recycle" target="_blank">以旧换新</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#" target="_blank">礼品包装</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/order/tcsProductIndex" target="_blank">补购保障</a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="#/order/batteryRenew" target="_blank">99元换电池</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>会员</dt>
+                                                    <dd>
+                                                        <div class="item">
+                                                            <a href="#/privilege" target="_blank">会员频道</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="downloadApp">
+                                    <div class="s-dropdown">
+                                        <div class="h">
+                                            <a class="icon-dropdown">手机版</a>
+                                        </div>
+                                        <div class="b">
+                                            <div class="dropdown-code">
+                                                <div class="clearfix dropdown-code-detail">
+                                                    <a href="#" target="_blank">
+                                                        <img src="../../static/images/mallcode.jpg" class="code-img">
+                                                    </a>
+                                                    <div class="code-info">
+                                                        <h2>华为商城APP</h2>
+                                                        <p class="red">新人专享好礼<br>最高5000积分</p>
+                                                        <span class="icon-andrid"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix dropdown-code-detail">
+                                                    <a>
+                                                        <img src="../../static/images/vmallcode.jpg" class="code-img">
+                                                    </a>
+                                                    <div class="code-info">
+                                                        <h2>华为商城公众号</h2>
+                                                        <p>微信扫一扫</p>
+                                                        <span class="icon-wechat"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix dropdown-code-detail">
+                                                    <a>
+                                                        <img src="../../static/images/procode.jpg" class="code-img">
+                                                    </a>
+                                                    <div class="code-info">
+                                                        <h2>微信小程序</h2>
+                                                        <p>微信扫一扫</p>
+                                                        <span class="icon-wechat"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="s-dropdown s-dropdown-minicart">
+                                        <div class="h h-wide" id="header-toolbar-minicart">
+                                            <a href="/cart?t=15156408584301568605742077" class="icon-minicart"
+                                                rel="nofollow" timetype="timestamp" target="blank">
+                                                <span>购物车(<span id="header-cart-total">0</span>)</span>
+                                            </a>
+                                        </div>
+                                        <div class="b" id="header-toolbar-minicart-content">
+                                            <!-- 2017-06-19-迷你购物车-start -->
+                                            <div class="dropdown-minicart">
+                                                <div class="minicart-pro-empty minicart-pro-empty-index"
+                                                    id="minicart-pro-empty">
+                                                    <p><span class="icon-minicart"></span></p>
+                                                    <p>您的购物车是空的，赶紧选购吧~</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="J_row clearfix">
+            <div class="J-col col-side-full clearfix">
+                <div class="J_mod mod-nav-home nav-home-656160">
+                    <div class="layout">
+                        <div class="left">
+                            <div class="logo_area">
+                                <a href="" title="Vmall.com - 华为商城"><img src="../../static/images/VMALL1.png"
+                                        alt=""></a>
+                                <em></em>
+                                <a href=""><img src="../../static/images/huawei1.png" alt=""></a>
+                            </div>
+                            <div class="naver">
+                                <ul id="naver-list clearfix">
+                                    <li>
+                                        <a href="#" target="_blank" class="">
+                                            <span>手机</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" class="">
+                                            <span>笔记本&amp;平板</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <span>智能穿戴&amp;智慧屏</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" class="">
+                                            <span>热销配件</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="naver-sub">
+                                <div class="naver-sub-wrap">
+                                    <div class="p-title clearfix">
+                                        <div class="s1 fl">
+                                            <a href="" target="_blank"><span>全部</span>手机</a>
+                                        </div>
+                                        <div class="s2 fl clearfix">
+                                            <a href="" target="_blank" class="fl">HUAWEI Mate系列</a>
+                                            <a href="" target="_blank" class="fl">HUAWEI P系列</a>
+                                            <a href="" target="_blank" class="fl">HUAWEI nova系列</a>
+                                            <a href="" target="_blank" class="fl">华为畅享系列</a>
+                                            <a href="" target="_blank" class="fl">HUAWEI 麦芒系列</a>
+                                        </div>
+                                    </div>
+                                    <ul id="zxnav_0_prolist" class="grid-list clearfix">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="search_bar" id="searchBar-area">
+                                <div class="search-bar-form">
+                                    <input type="text" class="text" maxlength="100" id="nav-search-kw"
+                                        autocomplete="off">
+                                    <input type="submit" class="button" value="搜索">
+                                </div>
+                                <div class="search-bar-keys">
+                                    <div class="searchBar_key">
+                                        <a href="#">5G</a>
+                                        <a href="#">荣耀20S</a>
+                                    </div>
+                                </div>
+                                <div class="search-bar-history"></div>
+                                <div class="search-bar-history"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-10"></div>
+        <div class="g">
+            <!--面包屑 -->
+            <div class="breadcrumb-area fcn"><a href="/index.html" title="首页">首页</a>&nbsp;&gt;&nbsp;<a href="/list-36"
+                    title="手机">手机</a>&nbsp;&gt;&nbsp;<a href="/list-285" title="HUAWEI P系列">HUAWEI
+                    P系列</a>&nbsp;&gt;&nbsp;
+                <span id="bread-pro-name">HUAWEI P30 Pro 麒麟980 超感光徕卡四摄 屏内指纹 双景录像 8GB+128GB 全网通版（天空之境）</span></div>
+        </div>
+        <div class="hr-10"></div>
+        <div class="product clearfix">
+            <div class="left">
+                <!-- 20170518-商品图片-start -->
+                <div class="product-gallery positionFixed">
+                    <div class="relative">
+                        <div class="product-gallery-img" id="pic-container">
+                            <div id="wrap">
+                                <a id="product-img"
+                                    href="https://res.vmallres.com/pimages//product/6901443293513/800_800_1555464685019mp.png"
+                                    class="cloud-zoom">
+                                    <img src="https://res.vmallres.com/pimages//product/6901443293513/428_428_1555464685019mp.png"
+                                        alt="HUAWEI P30 Pro">
+                                </a>
+                                <div class="mousetrap"></div>
+                            </div>
+                        </div>
+                        <a id="product-img" href="#" class="cloud-zoom"
+                            rel="adjustX: 10, adjustY:0, zoomWidth:400, zoomHeight:400">
+                    </div>
+                </div>
+                <div class="product-gallery-nav">
+                    <a href="javascript:;" class="product-gallery-back swiper-button-prev"></a>
+                    <!--不可点击添加class="disabled"-->
+                    <div class="product-gallery-thumbs swiper-container">
+                        <ul id="pro-gallerys" class="swiper-wrapper">
+                            <li class="current swiper-slide"><a href="javascript:;"><img
+                                        src="https://res.vmallres.com/pimages//product/6901443293513/78_78_1555464685019mp.png"
+                                        alt="HUAWEI P30 Pro 麒麟980 超感光徕卡四摄 屏内指纹 双景录像 8GB+128GB 全网通版（天空之境）"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img
+                                        src="https://res.vmallres.com/pimages//product/6901443293513/group//800_800_1555466059276.png"
+                                        alt="HUAWEI P30 Pro 麒麟980 超感光徕卡四摄 屏内指纹 双景录像 8GB+128GB 全网通版（天空之境）"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img
+                                        src="https://res.vmallres.com/pimages//product/6901443293513/group//800_800_1555466067206.png"
+                                        alt="HUAWEI P30 Pro 麒麟980 超感光徕卡四摄 屏内指纹 双景录像 8GB+128GB 全网通版（天空之境）"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img
+                                        src="https://res.vmallres.com/pimages//product/6901443293513/group//800_800_1555466061909.png"
+                                        alt="HUAWEI P30 Pro 麒麟980 超感光徕卡四摄 屏内指纹 双景录像 8GB+128GB 全网通版（天空之境）"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img
+                                        src="https://res.vmallres.com/pimages//product/6901443293513/group//800_800_1555466068861.png"
+                                        alt="HUAWEI P30 Pro 麒麟980 超感光徕卡四摄 屏内指纹 双景录像 8GB+128GB 全网通版（天空之境）"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img
+                                        src="https://res.vmallres.com/pimages//product/6901443293513/group//800_800_1555466064341.png"
+                                        alt="HUAWEI P30 Pro 麒麟980 超感光徕卡四摄 屏内指纹 双景录像 8GB+128GB 全网通版（天空之境）"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img
+                                        src="https://res.vmallres.com/pimages//product/6901443293513/group//800_800_1555466066146.png"
+                                        alt="HUAWEI P30 Pro 麒麟980 超感光徕卡四摄 屏内指纹 双景录像 8GB+128GB 全网通版（天空之境）"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img
+                                        src="https://res.vmallres.com/pimages//product/6901443293513/group//428_428_1555466056238.png"
+                                        alt="HUAWEI P30 Pro 麒麟980 超感光徕卡四摄 屏内指纹 双景录像 8GB+128GB 全网通版（天空之境）"></a></li>
+                        </ul>
+                    </div>
+                    <a href="javascript:;" class="product-gallery-forward swiper-button-next"></a>
+                </div>
+            </div>
+            <!-- 20170518-商品图片-end -->
+            <div class="right relative">
+                <div id="pro-add-success-mask" style="visibility:hidden;font-size:18px;width:348px;position: absolute;">
+                </div>
+                <div id="cart-tips" class="pro-popup-area hide">
+
+                    <div class="b">
+                        <div class="pro-add-success">
+                            <dl>
+                                <dt><s></s></dt>
+                                <dd>
+                                    <div class="box-right-2">
+
+                                        <p>HUAWEI P30 Pro</p>
+                                    </div>
+                                    <div class="box-button">
+                                        <a class="box-cancel" href="javascript:;"
+                                            onclick="$('#cart-tips').hide()">再逛逛</a>
+                                        <a href="javascript:;" class="box-ok"
+                                            onclick="ec.product.gotoshoppingCart()">去结算</a>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--弹出层-提示信息 -->
+                <div id="popup-tips" class="pro-popup-area hide">
+                    <div class="h">
+                        <a href="javascript:;" class="pro-popup-close" title="关闭"
+                            onclick="$('#popup-tips').hide()"><span>关闭</span></a>
+                    </div>
+
+                    <div class="b">
+                        <div class="pro-add-error">
+                            <div class="pro-add-error-msg" id="popup-tips-msg">非常抱歉！该商品不能单独销售！</div>
+                            <div class="pro-add-error-button"><a class="button-style-1 button-par-define"
+                                    href="javascript:;" onclick="$('#popup-tips').hide()" title="知道了">知道了</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 20170518-商品简介-start -->
+                <div class="product-property clearfix relative"
+                    style="min-height: 462.4px; height: auto; padding-bottom: 103.6px;">
+                    <div id="product-property-recommand">
+                        <!-- 20170518-商品简介-商品信息-start -->
+                        <div class="product-meta">
+                            <h1 id="pro-name">HUAWEI P30 Pro 麒麟980 超感光徕卡四摄 屏内指纹 双景录像 8GB+128GB 全网通版（天空之境）</h1>
+                            <input class="hide" value="10086407020352" id="product_sku">
+                            <input class="hide" value="10086102942203" id="product_productId">
+                            <div class="product-slogan" id="skuPromWord" style="display: block;"><a href="javascript:;"
+                                    class="product-slogan-btn" style="display: none;"></a> <span
+                                    class="product-slogan-link">①享12期分期免息 ②赠小天鹅蓝牙音箱 ③晒单赠好礼</span> <span>华为P30
+                                    Pro尊享金卡专属服务权益包含：①保修期内（不含延保）可享2次免费保养②1小时快修服务③金卡专属热线服务</span></div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-info-list clearfix">
+                                <label>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</label>
+                                <div class="product-price clearfix">
+                                    <div class="product-price-info">
+                                        <span id="pro-price-label" class="f24" style="display: none;"></span>
+                                        <span id="pro-price" class="f24"><em>¥</em>4988.00</span>
+                                        <input type="hidden" id="pro-price-hide" value="4988.00">
+                                        <s id="pro-price-old" style="display: none;"></s>
+                                        <b id="pro-price-label-deposit" style=""></b>
+                                        <span id="pro-price-deposit" style=""></span>
+                                        <b id="pro-price-label-amount" style="display:none">可抵</b>
+                                        <span id="pro-price-amount" style="display:none"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info-list clearfix hide" id="couponBtn" style="display: none;">
+                                <label>优&nbsp;&nbsp;惠&nbsp;&nbsp;券</label>
+                                <div class="clearfix" id="couponTag">
+
+                                </div>
+                            </div>
+                            <!-- 20170518-商品简介促销消息-start -->
+                            <div class="product-info-list clearfix " id="product-info-list-new" 1="">
+                                <label>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</label>
+                                <div class="product-prom fl show" id="product-prom-all">
+
+                                    <div class="product-prom-item clearfix product-parts" id="pro-match-gift" style="">
+                                        <em class="tag">赠品</em>
+                                        <div class="product-prom-con">
+                                            <div class="product-parts-list" id="pro-gift-list-select"><a id="gift-2827"
+                                                    href="/product/2827.html#183127050" target="_blank"
+                                                    title="华为小天鹅蓝牙免提音箱（香槟金）"><img
+                                                        src="https://res.vmallres.com/pimages//product/6901443076512/55_55_1539762754103mp.png"
+                                                        alt="华为小天鹅蓝牙免提音箱（香槟金）"></a></div>
+                                            <a href="javascript:;" class="product-partscolor"
+                                                onclick="ec.product.giftshow()">选择&nbsp;&gt;</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-prom-item clearfix" style=""><em class="tag">分期免息</em>
+                                        <div class="product-prom-con" title="花呗分期支付可享免息"> <span
+                                                class="product-prom-word">花呗分期支付可享免息 </span></div>
+                                    </div>
+                                    <div class="product-prom-item clearfix" style=""><em class="tag">赠送积分</em>
+                                        <div class="product-prom-con">购买即赠商城积分，积分可抵现~</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 20170518-商品简介促销消息-end -->
+                        </div>
+
+                        <!-- 20180206-商品简介-end -->
+                        <div class="hr-20"></div>
+
+                        <!-- 20170518-商品简介-服务说明-start -->
+                        <div class="product-pulldown clearfix" id="product-pulldown1">
+                            <label>服务说明</label>
+                            <div class="fl">
+                                <!-- 20160914-商品详情-预计送达-start -->
+                                <div class="product-address clearfix hidden" id="pro-predict" style="display: block;">
+                                    <div class="product-pulldown-main relative">
+                                        <div class="fl" id="address">
+                                            <a href="#"
+                                                class="product-pulldown-btn">北京&nbsp;&gt;&nbsp;北京&nbsp;&gt;&nbsp;昌平</a>
+                                        </div>
+                                        <div class="product-pulldown-detail">
+                                            <div class="product-pulldown-detailmain">
+                                                <div class="product-address-choose">
+                                                    <div class="product-address-normal"
+                                                        id="address_normal_effective_time">
+                                                        <dl class="clearfix" id="in_common_use_address">
+                                                        </dl>
+                                                        <div class="tips hide" id="deatilAddress"></div>
+                                                    </div>
+                                                    <div class="product-address-new" id="newAddress">
+                                                        <dl class="clearfix" id="provice_info">
+                                                        </dl>
+                                                    </div>
+                                                    <div class="product-address-table" id="address_table">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-address-prompt">
+                                        <span><span class="red">现货</span></span><em style="display: none;"></em>
+                                        <p class="hide" id="expectTimeDesc"></p>
+                                    </div>
+                                </div>
+                                <div class="product-description clearfix product-descriptionp-spacing" id="notesID"
+                                    style="display: none;">
+                                    <p id="notesDescription" class="hide"></p>
+                                </div>
+                                <!-- 20160914-商品详情-预计送达-end -->
+                                <div class="product-description-list clearfix">
+                                    <ul>
+                                        <li>已满48元已免运费</li>
+                                        <li>由华为商城负责发货，并提供售后服务</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 20170518-商品简介-服务说明-end -->
+                        <!-- 20171024-商品简介-商品编码-start -->
+                        <div class="product-description clearfix">
+                            <label>商品编码</label>
+                            <div class="fl" id="pro-sku-code2">2601010102603</div>
+                        </div>
+                        <!-- 20171024-商品简介-商品编码-end -->
+                        <div class="hr-5"></div>
+                        <div class="line"></div>
+                        <div class="hr-16"></div>
+
+
+                        <div id="pro-skus" class="">
+                            <dl class="product-choose clearfix  product-choosepic"><label>选择颜色</label>
+                                <div class="product-choose-detail ">
+                                    <ul>
+                                        <li class="attr1 attr16 attr31" data-attrname="颜色" data-attrcode="152138"
+                                            data-attrid="1,16,31"
+                                            data-skuid="10086068755052,10086595506798,10086087017501">
+                                            <div class="sku"><a href="javascript:;" title="亮黑色"><img
+                                                        src="https://res.vmallres.com/pimages//product/6901443293483/40_40_1555465815334mp.png"
+                                                        alt="亮黑色">
+                                                    <p><span>亮黑色</span></p>
+                                                </a></div>
+                                        </li>
+                                        <li class="attr4 attr19 attr34" data-attrname="颜色" data-attrcode="152138"
+                                            data-attrid="4,19,34"
+                                            data-skuid="10086106925758,10086037311821,10086189435100">
+                                            <div class="sku"><a href="javascript:;" title="极光色"><img
+                                                        src="https://res.vmallres.com/pimages//product/6901443293506/40_40_1555465937521mp.png"
+                                                        alt="极光色">
+                                                    <p><span>极光色</span></p>
+                                                </a></div>
+                                        </li>
+                                        <li class="attr7 attr22 attr37 attr46 attr49 attr55 selected" data-attrname="颜色"
+                                            data-attrcode="152138" data-attrid="7,22,37,46,49,55"
+                                            data-skuid="10086407020352,10086750655251,10086104987480,10086364888753,10086309711997,10086724360827">
+                                            <div class="sku"><a href="javascript:;" title="天空之境"><img
+                                                        src="https://res.vmallres.com/pimages//product/6901443293513/40_40_1555464685019mp.png"
+                                                        alt="天空之境">
+                                                    <p><span>天空之境</span></p>
+                                                </a></div>
+                                        </li>
+                                        <li class="attr10 attr25 attr40" data-attrname="颜色" data-attrcode="152138"
+                                            data-attrid="10,25,40"
+                                            data-skuid="10086438569119,10086754101079,10086760140089">
+                                            <div class="sku"><a href="javascript:;" title="赤茶橘"><img
+                                                        src="https://res.vmallres.com/pimages//product/6901443293520/40_40_1553080747347mp.png"
+                                                        alt="赤茶橘">
+                                                    <p><span>赤茶橘</span></p>
+                                                </a></div>
+                                        </li>
+                                        <li class="attr13 attr28 attr43 attr52" data-attrname="颜色"
+                                            data-attrcode="152138" data-attrid="13,28,43,52"
+                                            data-skuid="10086320576495,10086576037032,10086565812095,10086349529361">
+                                            <div class="sku"><a href="javascript:;" title="珠光贝母"><img
+                                                        src="https://res.vmallres.com/pimages//product/6901443293490/40_40_1553080852384mp.png"
+                                                        alt="珠光贝母">
+                                                    <p><span>珠光贝母</span></p>
+                                                </a></div>
+                                        </li>
+                                        <li class="attr58 attr64" data-attrname="颜色" data-attrcode="152138"
+                                            data-attrid="58,64" data-skuid="10086122159175,10086335147339">
+                                            <div class="sku"><a href="javascript:;" title="墨玉蓝"><img
+                                                        src="https://res.vmallres.com/pimages//product/6901443330621/40_40_7879F9E5EDCFDB274C0BF0C666004F12E0EF0ABDCE7DE700mp.png"
+                                                        alt="墨玉蓝">
+                                                    <p><span>墨玉蓝</span></p>
+                                                </a></div>
+                                        </li>
+                                        <li class="attr61 attr67" data-attrname="颜色" data-attrcode="152138"
+                                            data-attrid="61,67" data-skuid="10086827979712,10086517552977">
+                                            <div class="sku"><a href="javascript:;" title="嫣紫色"><img
+                                                        src="https://res.vmallres.com/pimages//product/6901443330638/40_40_2ECE1042848AFA007B12F58607BB16693CB23DED96CA8F0Bmp.png"
+                                                        alt="嫣紫色">
+                                                    <p><span>嫣紫色</span></p>
+                                                </a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dl>
+                            <dl class="product-choose clearfix "><label>选择版本</label>
+                                <div class="product-choose-detail ">
+                                    <ul>
+                                        <li class="attr2 attr5 attr8 attr11 attr14 attr47 attr59 attr62 selected"
+                                            data-attrname="版本" data-attrcode="733605" data-attrid="2,5,8,11,14,47,59,62"
+                                            data-skuid="10086068755052,10086106925758,10086407020352,10086438569119,10086320576495,10086364888753,10086122159175,10086827979712">
+                                            <div class="sku"><a href="javascript:;" title="全网通 8GB+128GB">
+                                                    <p><span>全网通 8GB+128GB</span></p>
+                                                </a></div>
+                                        </li>
+                                        <li class="attr17 attr20 attr23 attr26 attr29 attr50 attr53 attr65 attr68"
+                                            data-attrname="版本" data-attrcode="733605"
+                                            data-attrid="17,20,23,26,29,50,53,65,68"
+                                            data-skuid="10086595506798,10086037311821,10086750655251,10086754101079,10086576037032,10086309711997,10086349529361,10086335147339,10086517552977">
+                                            <div class="sku"><a href="javascript:;" title="全网通 8GB+256GB">
+                                                    <p><span>全网通 8GB+256GB</span></p>
+                                                </a></div>
+                                        </li>
+                                        <li class="attr32 attr35 attr38 attr41 attr44 attr56" data-attrname="版本"
+                                            data-attrcode="733605" data-attrid="32,35,38,41,44,56"
+                                            data-skuid="10086087017501,10086189435100,10086104987480,10086760140089,10086565812095,10086724360827">
+                                            <div class="sku"><a href="javascript:;" title="全网通 8GB+512GB">
+                                                    <p><span>全网通 8GB+512GB</span></p>
+                                                </a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dl>
+                            <dl class="product-choose clearfix" id="bundlePackage"><label>选择套餐</label>
+                                <div class="product-choose-detail  relative" id="bundlePackageSelect">
+                                    <ul>
+                                        <li class="attr3 attr6 attr9 attr12 attr15 attr18 attr21 attr24 attr27 attr30 attr33 attr36 attr39 attr42 attr45 attr60 attr63 attr66 attr69 selected"
+                                            data-attrname="套餐" data-attrcode="323374"
+                                            data-attrid="3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,60,63,66,69"
+                                            data-skuid="10086068755052,10086106925758,10086407020352,10086438569119,10086320576495,10086595506798,10086037311821,10086750655251,10086754101079,10086576037032,10086087017501,10086189435100,10086104987480,10086760140089,10086565812095,10086122159175,10086827979712,10086335147339,10086517552977">
+                                            <div class="sku"><a href="javascript:;" title="官方标配">
+                                                    <p><span>官方标配</span></p>
+                                                </a></div>
+                                        </li>
+                                        <li class="attr48 attr51 attr54 attr57" data-attrname="套餐"
+                                            data-attrcode="323374" data-attrid="48,51,54,57"
+                                            data-skuid="10086364888753,10086309711997,10086349529361,10086724360827">
+                                            <div class="sku"><a href="javascript:;" title="限量套装">
+                                                    <p><span>限量套装</span></p>
+                                                </a></div>
+                                        </li>
+                                    </ul>
+                                    <div id="giftPackageList" class="hide"></div>
+                                </div>
+                            </dl>
+                        </div>
+                        <!--联通合约机套餐-->
+                        <div id="contractLst" class="hide">
+                            <dl class="product-choose clearfix">
+                                <label>合约机</label>
+                                <div class="product-choose-detail">
+                                    <ul id="contractList-ol">
+                                    </ul>
+                                </div>
+                            </dl>
+                            <form action="/contract/choose-{id}" id="contractForm" class="hide">
+                                <input type="hidden" value="" id="gifts" name="gifts">
+                                <input name="CsrfToken" type="hidden" value="fb32ee2d-8551-498c-a513-dd0a5aef29e1">
+                            </form>
+                        </div>
+                        <dl class="product-choose clearfix" id="giftBuy_dl"><label>增值业务</label>
+                            <div class="product-choose-detail">
+                                <ul>
+                                    <li class="selected" data-attrname="无增值服务"><a href="javascript:;" title="无增值服务">
+                                            <p><span>无增值服务</span></p>
+                                        </a></li>
+                                    <li class="" data-skuid="10086430001419"><a href="javascript:;" title="礼品包装服务"
+                                            data-code="3201070002001" interest-price="¥25.00" data-pid="10086989037882">
+                                            <p><span>礼品包装服务</span></p>
+                                        </a></li><a href="javascript:;" target="_blank" class="btn-product-more hidden"
+                                        id="gift-service-detail-link"><span>了解详情</span>&gt;</a>
+                                </ul>
+                            </div>
+                        </dl>
+
+                        <!-- 20170518-商品简介-保障服务-start -->
+                        <div class="clearfix hide" id="pro-service" style="display: block;">
+                            <label>保障服务</label>
+                            <div class="product-property-con fl clearfix">
+                                <!-- 组合保 -->
+                                <div class="product-service" id="j-ucare">
+                                    <span class="hide" id="ucareSelect" skuid="" data-scode="" interest-price=""></span>
+                                    <a href="javascript:;" class="product-service-btn"><span
+                                            class="fl max-w">华为无忧服务</span><span class="fl">&nbsp;￥969</span></a>
+                                    <div class="product-service-detail">
+                                        <div class="product-service-list" id="ucareProtected">
+                                            <ul>
+                                                <li>
+                                                    <div class="fl">
+                                                        <input type="checkbox" name="ucareName">
+                                                        <div id="3201020013901" class="product-service-listcon"
+                                                            title="华为无忧服务" skuid="10086792140888"
+                                                            data-scode="3201020013901" data-price="969"><span
+                                                                class="fl max-w">华为无忧服务</span>
+                                                            <p class="fl"><span class="fl">&nbsp;￥969</span><a
+                                                                    target="_blank"
+                                                                    href="/product/10086204175388.html">详情&nbsp;&gt;</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 意外保 -->
+                                <div class="product-service">
+                                    <span class="hide" id="accidentSelect" skuid="" data-scode=""
+                                        interest-price=""></span>
+                                    <a href="javascript:;" class="product-service-btn"><span
+                                            class="fl max-w">碎屏(含后盖)服务宝1年</span><span class="fl">&nbsp;￥269.1</span></a>
+                                    <div class="product-service-detail">
+                                        <div class="product-service-list" id="accidentProtected">
+                                            <ul>
+                                                <li>
+                                                    <div class="fl">
+                                                        <input type="checkbox" name="accidentName">
+                                                        <div id="3201020003901" class="product-service-listcon"
+                                                            title="碎屏(含后盖)服务宝1年" skuid="10086844837652"
+                                                            data-scode="3201020003901" data-price="269.1"><em
+                                                                class="product-service-icon">优惠</em><span
+                                                                class="fl max-w">碎屏(含后盖)服务宝1年</span>
+                                                            <p class="fl"><span class="fl">&nbsp;￥269.1</span>&nbsp;<s
+                                                                    class="fl">￥299</s><a target="_blank"
+                                                                    href="/product/10086811704433.html">详情&nbsp;&gt;</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 延保 -->
+                                <div class="product-service">
+                                    <span class="hide" id="extendSelect" skuid="" data-scode=""
+                                        interest-price=""></span>
+                                    <a href="javascript:;" class="product-service-btn"><span
+                                            class="fl max-w">延长服务宝半年</span><span class="fl">&nbsp;￥198</span></a>
+                                    <div class="product-service-detail">
+                                        <div class="product-service-list" id="extendProtected">
+                                            <ul>
+                                                <li>
+                                                    <div class="fl">
+                                                        <input type="checkbox" name="extendedName">
+                                                        <div id="3201010004601" class="product-service-listcon"
+                                                            title="延长服务宝半年" skuid="10086975147243"
+                                                            data-scode="3201010004601" data-price="198"><span
+                                                                class="fl max-w">延长服务宝半年</span>
+                                                            <p class="f1"><span class="fl">&nbsp;￥198</span><a
+                                                                    target="_blank"
+                                                                    href="/product/10086840746918.html">详情&nbsp;&gt;</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="fl">
+                                                        <input type="checkbox" name="extendedName">
+                                                        <div id="3201010004101" class="product-service-listcon"
+                                                            title="延长服务宝1年" skuid="10086600251270"
+                                                            data-scode="3201010004101" data-price="196.2"><em
+                                                                class="product-service-icon">优惠</em><span
+                                                                class="fl max-w">延长服务宝1年</span>
+                                                            <p class="f1"><span class="fl">&nbsp;￥196.2</span>&nbsp;<s
+                                                                    class="fl">￥218</s><a target="_blank"
+                                                                    href="/product/10086705268979.html">详情&nbsp;&gt;</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 20170518-商品简介-保障服务-end -->
+
+                        <input type="hidden" value="" id="interestOrderNow">
+                        <!-- 20181026-商品简介-分期免息-start -->
+                        <div class="product-choose clearfix" id="prd-noInterset" interest-allow="1" interest-button="">
+                            <label>分期免息</label>
+                            <div class="product-choose-detail relative product-choose-pulldown">
+                                <ul>
+                                    <li class="" id="hbShow" style="float: left; margin-right: 10px;">
+                                        <!-- 选中li添加class="selected" 点击打开套餐添加class="click"-->
+                                        <div class="sku">
+                                            <a class="product-pulldown-btn" href="javascript:;">
+                                                <p><span>花呗分期</span></p>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-stages product-package-mini" id="hbDetail"
+                                            style="display: none;">
+                                            <div class="product-stages-con">
+                                                <div class="product-stages-main">
+                                                    <ul class="clearfix">
+                                                        <li><a href="javascript:;" interest-info="1:3">
+                                                                <p class="price">¥&nbsp;1662.67<em>x</em>3期</p>
+                                                                <p class="red">免息，0手续费</p>
+                                                            </a></li>
+                                                        <li><a href="javascript:;" interest-info="1:6">
+                                                                <p class="price">¥&nbsp;831.33<em>x</em>6期</p>
+                                                                <p class="red">免息，0手续费</p>
+                                                            </a></li>
+                                                        <li><a href="javascript:;" interest-info="1:12">
+                                                                <p class="price">¥&nbsp;415.67<em>x</em>12期</p>
+                                                                <p class="red">免息，0手续费</p>
+                                                            </a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tips">
+                                                    <h2>花呗分期是什么？</h2>
+                                                    <p>花呗分期是蚂蚁金服（支付宝公司）提供的先消费后分期还款的赊购服务。<br>免息活动仅限单款商品的订单，对含多款商品的订单暂不支持。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="product-package-mini-tool clearfix">
+                                                <div class="fr">
+                                                    <a id="interestHBPayNow" href="javascript:;"
+                                                        class="product-package-mini-btn product-button02 disabled"
+                                                        onclick="ec.product.interest.payByInterest(1);"
+                                                        interest-info=""><span>分期购买<span></span></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li id="hlShow" style="display: none; margin-right: 10px;">
+                                        <div class="sku">
+                                            <a class="product-pulldown-btn" href="javascript:;">
+                                                <p><span>掌上生活分期</span></p>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-stages product-package-mini " id="hlDetail"
+                                            style="display: none;">
+                                            <div class="product-stages-con">
+                                                <div class="product-stages-main">
+                                                    <ul class="clearfix">
+                                                    </ul>
+                                                </div>
+                                                <div class="tips">
+                                                    <h2>掌上生活分期是什么？</h2>
+                                                    <p>掌上生活分期是招商银行信用卡中心提供的消费分期服务。<br>免息活动仅限单款商品的订单，对含多款商品的订单暂不支持。</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-package-mini-tool clearfix">
+                                                <div class="fr">
+                                                    <a id="interestPayHLNow" href="javascript:;"
+                                                        class="product-package-mini-btn product-button02 disabled"
+                                                        onclick="ec.product.interest.payByInterest(2);"
+                                                        interest-info=""><span>分期购买<span></span></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 20181026-商品简介-分期免息-end -->
+                        <!-- 20170518-商品简介-物流现货-start -->
+                        <div class="product-pulldown clearfix hide">
+                            <label>物流售后</label>
+                            <div class="product-pulldown-main relative">
+                                <!--鼠标悬浮按钮的图标span选择后 class="product-pulldown-main relative" 改为 class="product-pulldown-main product-pulldown-main-show relative"-->
+                                <a href="#" class="product-pulldown-btn">江苏省&gt;南京市&gt;玄武区<span></span></a>
+                                <div class="product-pulldown-detail">
+                                    <div class="product-pulldown-detailmain">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 20170518-商品简介-物流现货-end -->
+
+                        <!-- 推荐-start -->
+                        <div id="Recommend" class="clearfix">
+                            <label>推荐</label>
+                            <div class="product-choose-relation">
+                                <ul class="clearfix">
+                                    <li><a href="/product/10086225607276.html" target="_blank"
+                                            onclick="pushProRelationMsg(10086225607276,1)">HUAWEI P30</a></li>
+                                    <li><a href="/product/10086736167198.html" target="_blank"
+                                            onclick="pushProRelationMsg(10086736167198,2)">HUAWEI P30 Pro潜水保护壳</a></li>
+                                    <li><a href="/product/10086596704458.html" target="_blank"
+                                            onclick="pushProRelationMsg(10086596704458,3)">华为NM存储卡</a></li>
+                                    <li><a href="/product/10086780319057.html" target="_blank"
+                                            onclick="pushProRelationMsg(10086780319057,4)">华为40W超级快充移动电源</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 推荐-end -->
+
+                        <div class="product-operation-main product-operation-location" style="min-height: 49px;">
+                            <!-- 20170518-商品简介-已选择商品-start -->
+                            <div class="product-description clearfix">
+                                <label>已选择商品:</label>
+                                <div id="pro-select-sku" class="product-selected">天空之境 / 全网通 8GB+128GB / 官方标配 <div
+                                        id="giftBuy-selected" class="inline">&nbsp;/&nbsp;无增值服务</div>
+                                </div>
+                            </div>
+                            <!-- 20170518-商品简介-已选择商品-end -->
+
+                            <!-- 20170518-商品简介-提示-end -->
+                            <div id="product-tips" class="product-tips hide" style="display: none;"></div>
+                            <!-- 20170518-商品简介-提示-end -->
+
+                            <!-- 20170518-商品简介-提交操作-start -->
+                            <div id="product-operation" class="product-operation relative" style="">
+                                <div class="clearfix">
+                                    <!-- 20170518-商品简介-购买数量-start -->
+                                    <div class="product-stock" id="pro-quantity-area">
+                                        <input id="pro-quantity" type="text" class="product-stock-text" placeholder="1"
+                                            value="1">
+                                        <p class="product-stock-btn"><a id="pro-quantity-plus"
+                                                href="javascript:;">+</a><a id="pro-quantity-minus" href="javascript:;"
+                                                class="disabled">−</a></p>
+                                    </div>
+                                    <div class="product-stock hide" id="pro-quantity-area-nochange"
+                                        style="display: none;">
+                                        <input type="text" class="product-stock-text" placeholder="1" value="1"
+                                            disabled="disabled">
+                                        <p class="product-stock-btn"><a href="javascript:;" class="disabled">+</a><a
+                                                href="javascript:;" class="disabled">−</a></p>
+                                    </div>
+                                    <!-- 20170518-商品简介-购买数量-end -->
+
+
+                                    <div class="product-buttonmain">
+                                        <!-- 20170518-商品简介-按钮-start -->
+                                        <div id="pro-operation" class="product-button clearfix"
+                                            style="visibility: visible;"><a href="javascript:;"
+                                                onclick="ec.product.addCart()"
+                                                class="product-button01"><span>加入购物车</span></a><a href="javascript:;"
+                                                onclick="ec.product.orderNow()"
+                                                class="product-button02"><span>立即下单</span></a></div>
+                                        <!-- 20170518-商品简介-按钮-end -->
+                                        <!-- 20170518-商品简介-协议-start -->
+                                        <div class="product-agreement hide" id="product-deposit-agreement-area"
+                                            style="display: none;">
+                                            <input type="checkbox" id="pro-agreement-area-check" checked="">
+                                            <span>同意<a href="javascript:;"
+                                                    onclick="ec.product.showDepositAgreement()">订金支付协议</a></span>
+                                        </div>
+                                        <!-- 20170518-商品简介-协议-end -->
+                                        <!-- 20180212-商品简介-游客购买-start -->
+
+                                        <!-- 20180212-商品简介-游客购买-end -->
+                                    </div>
+                                </div>
+
+                                <div class="product-tips02 " id="goAddressId" style="display:none">
+                                    <lable>温馨提示</lable>
+                                    <p>
+                                        提前设置<a href="/member/myAddress?t=453453454353" target="_blank"
+                                            onclick="ec.product.pushAddress()">默认收货地址</a>，购买更顺利~
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="product-deposit clearfix" id="buyProcessIDD" style="display:none">
+                                <h2>购买流程</h2>
+                                <ul>
+                                    <li>1.&nbsp;&nbsp;&nbsp;支付订金（<span id="startDateIDD">提前锁定购买资格</span>）</li>
+                                    <li>2.&nbsp;&nbsp;&nbsp;支付尾款（<span id="balanceStartDateIDD">暂无</span>）</li>
+                                    <li>3.&nbsp;&nbsp;&nbsp;等待发货（按支付尾款时间顺序发货）</li>
+                                </ul>
+                            </div>
+                            <div class="gallery-scroll-bottom"></div>
+                        </div>
+                        <!-- 20170518-商品简介-提交操作-end -->
+                        <!-- 20170518-商品简介-按钮-start -->
+                        <div class="product-support">
+                            <ul>
+                                <li>
+                                    <a href="https://www.vmall.com/recycle" target="_blank"
+                                        class="product-button-oldnew"></a>
+                                    <div class="product-support-detial product-oldnew-detail hide">
+                                        <div class="product-support-detialmain">
+                                            <label>以旧换新，</label><a href="https://www.vmall.com/recycle" target="_blank"
+                                                style="color:red">限时领券，享回收加价补贴</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="product-button-code"></a>
+                                    <div class="product-support-detial product-code-detail hide">
+                                        <div class="product-support-detialmain">
+                                            <p>用手机扫码进行购买</p>
+                                            <div id="product_wap"><canvas width="118" height="118"></canvas></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 20170518-商品简介-按钮-end -->
+                    </div>
+                </div>
+                <!-- 20170518-商品简介-属性-end -->
+            </div>
+        </div>
+        <div class="proDetailsss">
+            <article class="pro-parameter">
+                <nav>
+                    <div class="content-center">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a  data-toggle="tab" aria-expanded="true">产品详情</a>
+                            </li>
+                            <li class="">
+                                <a  data-toggle="tab" id="param"
+                                    aria-expanded="false">产品参数</a></li>
+                            <!--<li><a href="#noteContent" data-toggle="tab" id="note">购买须知</a></li>-->
+                            <li class="">
+                                <a data-toggle="tab" id="eval"
+                                    aria-expanded="false">产品评价</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="infoContent">
+                        <!--<div class="content-center">-->
+                        <!--<div class="block">-->
+                        <div class="param">
+                        </div>
+                        <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="tab-pane fade" id="paramContent">
+                        <div class="content-center">
+                            <div class="block">
+                                <p class="param-title">产品参数</p>
+                                <div class="param">
+                                    <div class="param">
+                                        <div class="param-item">
+                                            <div class="param-name">产品名称</div>
+                                            <div class="param-content">
+                                                <p>黑鲨游戏手机 2 Pro</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">颜色</div>
+                                            <div class="param-content">
+                                                <p>电鸣黑 冰魄灰 风行蓝</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">处理器与内存</div>
+                                            <div class="param-content">
+                                                <div class="param-content-item">
+                                                    <p>12GB＋128GB</p>
+                                                    <p>骁龙855 Plus最高主频2.96GHz</p>
+                                                    <p>Adreno™ 640 图形处理器</p>
+                                                    <p>12GB LPDDR4x 双通道</p>
+                                                    <p>128GB 机身存储 UFS3.0</p>
+                                                </div>
+                                                <div class="param-content-item">
+                                                    <p>12GB＋256GB</p>
+                                                    <p>骁龙855 Plus最高主频2.96GHz</p>
+                                                    <p>Adreno™ 640 图形处理器</p>
+                                                    <p>12GB LPDDR4x 双通道</p>
+                                                    <p>256GB 机身存储 UFS3.0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">重量与尺寸</div>
+                                            <div class="param-content">
+                                                <p>高度：163.61mm</p>
+                                                <p>宽度：75.01mm</p>
+                                                <p>厚度：8.77mm（后壳中部最高处10.07mm）</p>
+                                                <p>重量：205g（备注：受产品配置和制造工艺影响，实际机身重量或有差异，请以实物为准）</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">续航与快充</div>
+                                            <div class="param-content">
+                                                <p>4000mAh(typ)/3900mAh(min)</p>
+                                                <p>内置电池，免更换</p>
+                                                <p>手机支持 QC4+ 快充协议，标配27W充电器（充电器支持Qualcomm® Quick Charge™ 3.0协议）</p>
+                                                <p>USB Type-C 双面充电接口</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">拍照与摄像</div>
+                                            <div class="param-content">
+                                                <p><strong>后置摄像头</strong></p>
+                                                <p>主摄像头48M 0.8µm（48MP 4in1 PDAF f1.75）</p>
+                                                <p>光圈: f/1.75 大光圈</p>
+                                                <p>6片式镜头</p>
+                                                <p>LED闪光灯</p>
+                                                <p>副摄像头12M 1.0µm（12MP PDAF f2.2）</p>
+                                                <p>光圈: f/2.2光圈</p>
+                                                <p>6片式镜头 长焦镜头（2倍光学变焦）</p>
+                                                <p>&nbsp;</p>
+                                                <p>支持PDAF相位对焦</p>
+                                                <p>支持暗光增强技术</p>
+                                                <p>HDR 高动态范围调节技术</p>
+                                                <p>人像模式</p>
+                                                <p>全景模式</p>
+                                                <p>AI相机</p>
+                                                <p>超级夜景</p>
+                                                <p>&nbsp;</p>
+                                                <p><strong>前置摄像头</strong></p>
+                                                <p>20M 0.9µm 4in1</p>
+                                                <p>光圈: f/2.0光圈</p>
+                                                <p>5片式镜头</p>
+                                                <p>&nbsp;</p>
+                                                <p>智能美颜，自拍实时美颜</p>
+                                                <p>倒计时自拍</p>
+                                                <p>人像模式</p>
+                                                <p>&nbsp;</p>
+                                                <p>4K 视频拍摄，60fps</p>
+                                                <p>1080p 视频拍摄，60fps</p>
+                                                <p>慢动作 720P@240fps，1080P@120fps，720P@1920fps</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">屏幕</div>
+                                            <div class="param-content">
+                                                <p>6.39英寸 AMOLED</p>
+                                                <p>19.5:9 全面屏</p>
+                                                <p>430nit（typ） 高亮度</p>
+                                                <p>1080*2340 分辨率 403PPI 对比度 ≥60000:1</p>
+                                                <p>DCI－P3 色域 占比108.9%（typ）</p>
+                                                <p>支持护眼模式</p>
+                                                <p>支持MEMC 智能运动补偿技术</p>
+                                                <p>支持图像增强</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">网络支持</div>
+                                            <div class="param-content">
+                                                <p>3 X CA，2 X CA, 支持4*4 MIMO（Band 1/3/38/39/41）</p>
+                                                <p>全网通</p>
+                                                <p>双Nano－SIM 卡槽，支持双卡盲插</p>
+                                                <p>出厂默认卡1位主卡，可以通过设置切换主副卡</p>
+                                                <p>主卡支持TD LTE／FDD LTE／TD－SCDMA／WCDMA／CDMA／GSM</p>
+                                                <p>副卡支持TD LTE／FDD LTE／TD－SCDMA／WCDMA／CDMA／GSM</p>
+                                                <p>主副卡不能同时CDMA</p>
+                                                <p>支持802.11a/b/g/n/ac 双频无线网络</p>
+                                                <p>支持2 X 2 mimo 技术，支持MU MIMO</p>
+                                                <p>支持WIFI Display，WIFI Direct，WIFI 热点</p>
+                                                <p>支持蓝牙5.0 无线技术，支持 aptX &amp; aptX HD &amp; aptX Adaptive &amp; LDAC
+                                                    高清音乐传输</p>
+                                                <p><strong>网络频段</strong></p>
+                                                <p>FDD LTE（频段 B1,B3,B4,B5,B7,B8）</p>
+                                                <p>TDD LTE（频段 B34,B38,B39,B40,B41）</p>
+                                                <p>TD-SCDMA（频段 B34,B39）</p>
+                                                <p>WCDMA（频段 B1,B2,B5,B8）</p>
+                                                <p>GSM（频段 B2,B3,B5,B8）</p>
+                                                <p>CDMA／EVDO（频段 BC0）</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">指纹按键与识别</div>
+                                            <div class="param-content">
+                                                <p>虚拟按键：多任务，HOME，返回</p>
+                                                <p>支持全面屏手势，支持四角滑动进入智能DOCK</p>
+                                                <p>Shark键：两段式开关，进入或者退出Sharkspace</p>
+                                                <p>支持支付宝，微信指纹支付</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">导航定位</div>
+                                            <div class="param-content">
+                                                <p>GPS，Galileo，GLONASS，北斗，QZSS，A-GPS辅助定位</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">传感器</div>
+                                            <div class="param-content">
+                                                <p>陀螺仪，地磁，重力感应，距离感应，环境光感应，屏下指纹，压力感应</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">多媒体播放</div>
+                                            <div class="param-content">
+                                                <p>视频文件格式：3gp、mp4、flv、avi、asf、webm、3g2等</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">音频&amp;图片</div>
+                                            <div class="param-content">
+                                                <p>音频文件格式：mp3、amr、flac、aac、wav、ogg、wma、ape、aiff等</p>
+                                                <p>图片文件格式：png、gif、jpg、bmp、webp、wbmp等</p>
+                                            </div>
+                                        </div>
+                                        <div class="param-item">
+                                            <div class="param-name">包装清单</div>
+                                            <div class="param-content">
+                                                <div class="param-content-item-row">
+                                                    <p>手机主机／电源适配器／USB Type-C 数据线／Type-C Audio
+                                                        转接线／插针／手机保护壳／保护膜／入门指南／三包凭证（请以实际入盒配件内容为准）</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="evalContent">
+                        <div class="content-center">
+                            <div class="block">
+                                <p class="param-title">产品评价</p>
+                                <div class="eval">
+                                    <div class="eval-item">
+                                    </div>
+                                    <div class="eval-item">
+                                    </div>
+                                    <div class="eval-item">
+                                    </div>
+                                    <div class="eval-item">
+                                    </div>
+                                    <div class="eval-item">
+                                    </div>
+                                    <div class="eval-item">
+                                    </div>
+                                    <div class="eval-item">
+                                    </div>
+                                    <div class="eval-item">
+                                    </div>
+                                    <div class="eval-item">
+                                    </div>
+                                    <div class="eval-item">
+                                    </div>
+                                </div>
+                                <div class="pagination-col">
+                                    <div id="Pagination" class="pagination"><span class="current prev">上一页</span><span
+                                            class="current">1</span><a href="javascript:void(0)">2</a><a
+                                            href="javascript:void(0)">3</a><a href="javascript:void(0)">4</a><a
+                                            href="javascript:void(0)">5</a><a href="javascript:void(0)">6</a><a
+                                            href="javascript:void(0)">7</a><a
+                                            href="javascript:void(0)">8</a><span>...</span><a
+                                            href="javascript:void(0)">31</a><a href="javascript:void(0)"
+                                            class="next">下一页</a><input id="pagevalue" size="1" value=""
+                                            type="text"><span>
+                                            <div id="search">跳转</div>
+                                        </span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>
